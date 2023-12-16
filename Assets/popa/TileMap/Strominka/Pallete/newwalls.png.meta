@@ -365,7 +365,7 @@ TextureImporter:
         width: 12
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,7 +386,7 @@ TextureImporter:
         width: 12
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,20 +409,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      newwalls_0: 410384994
-      newwalls_1: -2099310870
-      newwalls_10: -1578075481
-      newwalls_11: 1363074611
-      newwalls_12: -308650328
-      newwalls_13: -1053827936
+      newwalls_8: 117978343
       newwalls_2: 378124036
       newwalls_3: -371822773
-      newwalls_4: -561354276
-      newwalls_5: 1502473550
-      newwalls_6: -655125803
+      newwalls_13: -1053827936
       newwalls_7: 1784461021
-      newwalls_8: 117978343
+      newwalls_11: 1363074611
+      newwalls_0: 410384994
+      newwalls_12: -308650328
+      newwalls_6: -655125803
+      newwalls_10: -1578075481
       newwalls_9: -906616829
+      newwalls_5: 1502473550
+      newwalls_4: -561354276
+      newwalls_1: -2099310870
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

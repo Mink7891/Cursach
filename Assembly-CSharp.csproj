@@ -60,7 +60,9 @@
     <Compile Include="Assets\Script\Bogush.cs" />
     <Compile Include="Assets\Script\Kashkin.cs" />
     <Compile Include="Assets\Script\Book.cs" />
+    <Compile Include="Assets\Script\CheckEnemyRooms.cs" />
     <Compile Include="Assets\Script\Pervak.cs" />
+    <Compile Include="Assets\Script\PointsDoor.cs" />
     <Compile Include="Assets\Script\BookBoss.cs" />
     <Compile Include="Assets\Script\SpawnEnemy.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
@@ -73,12 +75,10 @@
     <Compile Include="Assets\Script\Ladder.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogTrigger.cs" />
     <Compile Include="Assets\popa\Ksenuch\Dialog.cs" />
-    <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
-    <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
     <Compile Include="Assets\Script\ControlDoor.cs" />
-    <Compile Include="Assets\Script\PointsDoor.cs" />
-    <Compile Include="Assets\Script\CheckEnemyRooms.cs" />
+    <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
+    <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
