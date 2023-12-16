@@ -41,6 +41,15 @@ public class Bullet : MonoBehaviour
                 Destroy(collision.gameObject);
             }
         }
+        else if (collision.gameObject.CompareTag("Pervak"))
+        {
+            DestroyBullet();
+            collision.gameObject.GetComponent<Pervak>().hp -= 25;
+            if (collision.gameObject.GetComponent<Pervak>().hp <= 0)
+            {
+                Destroy(collision.gameObject);
+            }
+        }
         else if (collision.gameObject.CompareTag("Wall"))
         {
             DestroyBullet();

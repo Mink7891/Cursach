@@ -74,6 +74,7 @@
     <Compile Include="Assets\popa\Ksenuch\Dialog.cs" />
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
+    <Compile Include="Assets\Script\Pervak.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

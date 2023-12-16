@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     //private GameObject ksenich;
     //private GameObject kashkin;
     //private GameObject bogush;
-    //public RectTransform healthBar;
+    public RectTransform healthBar;
     public float hp;
     private void Update()
     {
@@ -75,6 +75,18 @@ public class Player : MonoBehaviour
         //}
     }
 
+    public void HaveDamage(int damage)
+    {
+        hp -= damage;
+        float hpLos = damage / hp;
+        Vector2 currentOffsetMax = healthBar.offsetMax;
+        Vector2 currentOffsetMin = healthBar.offsetMin;
+
+        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+
+        healthBar.offsetMax = currentOffsetMax;
+        healthBar.offsetMin = currentOffsetMin;
+    }
     private void ShootBullet(Vector3 targetPosition)
     {
         GameObject bullett = Instantiate(bullet, transform.position, Quaternion.identity);
