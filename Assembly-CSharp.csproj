@@ -61,7 +61,6 @@
     <Compile Include="Assets\Script\Kashkin.cs" />
     <Compile Include="Assets\Script\Book.cs" />
     <Compile Include="Assets\Script\BookBoss.cs" />
-    <Compile Include="Assets\Script\FollowCamera.cs" />
     <Compile Include="Assets\Script\SpawnEnemy.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Script\ControlButton.cs" />
@@ -75,6 +74,7 @@
     <Compile Include="Assets\popa\Ksenuch\Dialog.cs" />
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
+    <Compile Include="Assets\Script\Pervak.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

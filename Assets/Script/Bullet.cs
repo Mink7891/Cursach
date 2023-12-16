@@ -6,10 +6,10 @@ public class Bullet : MonoBehaviour
 {
     private void Update()
     {
-        if (transform.position.x > 35f || transform.position.x < -35f || transform.position.y > 35f || transform.position.x < -35f)
-        {
-            DestroyBullet();
-        }
+        //if (transform.position.x > 35f || transform.position.x < -35f || transform.position.y > 35f || transform.position.x < -35f)
+        //{
+        //    DestroyBullet();
+        //}
         GetComponent<Rigidbody2D>().MoveRotation(GetComponent<Rigidbody2D>().rotation + 1250 * Time.fixedDeltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,6 +37,15 @@ public class Bullet : MonoBehaviour
             DestroyBullet();
             collision.gameObject.GetComponent<Kashkin>().hp -= 20;
             if (collision.gameObject.GetComponent<Kashkin>().hp <= 0)
+            {
+                Destroy(collision.gameObject);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Pervak"))
+        {
+            DestroyBullet();
+            collision.gameObject.GetComponent<Pervak>().hp -= 25;
+            if (collision.gameObject.GetComponent<Pervak>().hp <= 0)
             {
                 Destroy(collision.gameObject);
             }

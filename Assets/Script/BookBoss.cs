@@ -30,15 +30,15 @@ public class BookBoss : MonoBehaviour
         {
             DestroyBullet();
 
-            float hpLos = damage / collision.gameObject.GetComponent<Player>().hp;
-            collision.gameObject.GetComponent<Player>().hp -= damage;
-            Vector2 currentOffsetMax = collision.gameObject.GetComponent<Player>().healthBar.offsetMax;
-            Vector2 currentOffsetMin = collision.gameObject.GetComponent<Player>().healthBar.offsetMin;
+            //float hpLos = damage / collision.gameObject.GetComponent<Player>().hp;
+            //collision.gameObject.GetComponent<Player>().hp -= damage;
+            //Vector2 currentOffsetMax = collision.gameObject.GetComponent<Player>().healthBar.offsetMax;
+            //Vector2 currentOffsetMin = collision.gameObject.GetComponent<Player>().healthBar.offsetMin;
 
-            currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+            //currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
 
-            collision.gameObject.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
-            collision.gameObject.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
+            //collision.gameObject.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
+            //collision.gameObject.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
 
 
             if (collision.gameObject.GetComponent<Player>().hp <= 0)
