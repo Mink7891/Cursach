@@ -7,7 +7,6 @@ public class Pervak : MonoBehaviour
     private GameObject player;
     private Animator anim;
     private bool isStop = true;
-    private bool isAttack = true;
     public int speed;
     public int damage;
     public int hp;
@@ -18,11 +17,11 @@ public class Pervak : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")){isStop = false;}
+        if (collision.gameObject.CompareTag("Player")){ isStop = false; anim.SetTrigger("bite"); }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) { isStop = true; }
+        if (collision.gameObject.CompareTag("Player")) { isStop = true; anim.SetTrigger("idle"); }
     }
 
     bool IsWallBetween(Vector3 start, Vector3 end)
@@ -37,11 +36,6 @@ public class Pervak : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) <= 10f && !IsWallBetween(transform.position, player.transform.position) && isStop)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            anim.SetTrigger("bite");
-        }
-        if (!isStop)
-        {
-            if (isAttack) { anim.SetTrigger("idle"); }
         }
     }
 
