@@ -68,13 +68,13 @@
     <Compile Include="Assets\Script\DamageRadius.cs" />
     <Compile Include="Assets\Script\Line.cs" />
     <Compile Include="Assets\Script\Ksenich.cs" />
+    <Compile Include="Assets\popa\Ksenuch\GuardianScript.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\Ladder.cs" />
-    <Compile Include="Assets\popa\Ksenuch\GuardianScript.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogTrigger.cs" />
-    <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\popa\Ksenuch\Dialog.cs" />
+    <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
+    <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

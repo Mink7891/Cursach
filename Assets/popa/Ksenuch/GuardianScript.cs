@@ -6,24 +6,28 @@ public class GuardianScript : MonoBehaviour
 {
 
 
-    public DialogTrigger dialog;
+    private DialogTrigger dialog;
     
     void Start()
     {
         dialog = GetComponent<DialogTrigger>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 
-    void OnTriggerStay2D(Collider2D other)
+    //void OnTriggerStay2D(Collider2D other)
+    //{
+    //    if (Input.GetKeyDown(KeyCode.E)) {
+    //        dialog.TriggerDialog();
+    //    }
+    //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.E)) {
+        if (collision.gameObject.CompareTag("Player"))
+        {
             dialog.TriggerDialog();
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }
