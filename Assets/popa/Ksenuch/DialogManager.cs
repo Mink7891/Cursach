@@ -9,11 +9,13 @@ public class DialogManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     private Queue<string> sentences;
     public GameObject dialogWindow;
+    private GameObject player;
 
 
     void Start()
     {
         sentences = new Queue<string>();
+        player = GameObject.Find("Player");
     }
 
     public void StartDialog(Dialog dialog)
@@ -60,6 +62,8 @@ public class DialogManager : MonoBehaviour
     public void EndDialog()
     {
         dialogWindow.SetActive(false);
+        player.GetComponent<Player>().enabled = true;
+        player.GetComponent<CharacterController>().enabled = true;
     }
 
     public void FixedUpdate()

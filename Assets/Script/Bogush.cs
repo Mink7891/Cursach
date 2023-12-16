@@ -35,15 +35,15 @@ public class Bogush : MonoBehaviour
     {
         temp = false;
 
-        float hpLos = damage / player.GetComponent<Player>().hp;
-        player.GetComponent<Player>().hp -= damage;
-        Vector2 currentOffsetMax = player.GetComponent<Player>().healthBar.offsetMax;
-        Vector2 currentOffsetMin = player.GetComponent<Player>().healthBar.offsetMin;
+        //float hpLos = damage / player.GetComponent<Player>().hp;
+        //player.GetComponent<Player>().hp -= damage;
+        //Vector2 currentOffsetMax = player.GetComponent<Player>().healthBar.offsetMax;
+        //Vector2 currentOffsetMin = player.GetComponent<Player>().healthBar.offsetMin;
 
-        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+        //currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
 
-        player.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
-        player.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
+        //player.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
+        //player.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
 
 
         yield return new WaitForSeconds(1f);

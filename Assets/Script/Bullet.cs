@@ -6,10 +6,10 @@ public class Bullet : MonoBehaviour
 {
     private void Update()
     {
-        if (transform.position.x > 35f || transform.position.x < -35f || transform.position.y > 35f || transform.position.x < -35f)
-        {
-            DestroyBullet();
-        }
+        //if (transform.position.x > 35f || transform.position.x < -35f || transform.position.y > 35f || transform.position.x < -35f)
+        //{
+        //    DestroyBullet();
+        //}
         GetComponent<Rigidbody2D>().MoveRotation(GetComponent<Rigidbody2D>().rotation + 1250 * Time.fixedDeltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)

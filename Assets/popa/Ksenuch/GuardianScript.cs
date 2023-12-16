@@ -28,6 +28,8 @@ public class GuardianScript : MonoBehaviour
         {
             dialog.TriggerDialog();
             GetComponent<BoxCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<Player>().enabled = false;
+            collision.gameObject.GetComponent<CharacterController>().enabled = false;
         }
     }
 }

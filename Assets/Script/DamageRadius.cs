@@ -26,15 +26,15 @@ public class DamageRadius : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
 
-            float hpLos = GetComponentInParent<Ksenich>().damage / player.GetComponent<Player>().hp;
-            player.GetComponent<Player>().hp -= GetComponentInParent<Ksenich>().damage;
-            Vector2 currentOffsetMax = player.GetComponent<Player>().healthBar.offsetMax;
-            Vector2 currentOffsetMin = player.GetComponent<Player>().healthBar.offsetMin;
+            //float hpLos = GetComponentInParent<Ksenich>().damage / player.GetComponent<Player>().hp;
+            //player.GetComponent<Player>().hp -= GetComponentInParent<Ksenich>().damage;
+            //Vector2 currentOffsetMax = player.GetComponent<Player>().healthBar.offsetMax;
+            //Vector2 currentOffsetMin = player.GetComponent<Player>().healthBar.offsetMin;
 
-            currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+            //currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
 
-            player.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
-            player.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
+            //player.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
+            //player.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
 
             player.GetComponent<Player>().hp -= 100;
             yield return new WaitForSeconds(delay);

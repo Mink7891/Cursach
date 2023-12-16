@@ -231,7 +231,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7408895498547732032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b298a78f9c76f347a8e48c7bfa4b9f8, type: 3}
   m_Name: 
@@ -239,6 +239,8 @@ MonoBehaviour:
   book: {fileID: 5340796261765840072, guid: e5ea674707315de448485b8b17dba281, type: 3}
   speed: 5
   hp: 100
+  waipoint1: []
+  damage: 0
 --- !u!61 &7408895498547732094
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -5282,7 +5282,7 @@ GameObject:
   - component: {fileID: 413555266}
   m_Layer: 0
   m_Name: TileWalls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16734,7 +16734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881572160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09367859, y: 0.27337173, z: -10}
+  m_LocalPosition: {x: 0.09367859, y: 0.2733717, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40196,8 +40196,9 @@ GameObject:
   - component: {fileID: 1933182586}
   - component: {fileID: 1933182585}
   - component: {fileID: 1933182584}
+  - component: {fileID: 1933182590}
   m_Layer: 0
-  m_Name: down walk MainCharacter_0
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40353,6 +40354,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1933182590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933182583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1dc2ee14602bd48a7d9698b74daa72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  speedShoot: 500
+  bullet: {fileID: 2802097822154314404, guid: 7af2e155a409c6041899d782c5bd0723, type: 3}
+  hp: 700
 --- !u!1 &1939804697
 GameObject:
   m_ObjectHideFlags: 0
