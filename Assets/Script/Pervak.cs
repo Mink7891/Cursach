@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pervak : MonoBehaviour
 {
     private GameObject player;
+    private Animator anim;
     private bool isStop = true;
     private bool isAttack = true;
     public int speed;
@@ -12,6 +13,7 @@ public class Pervak : MonoBehaviour
     public int hp;
     private void Start()
     {
+        anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,23 +32,16 @@ public class Pervak : MonoBehaviour
 
         return hit.collider != null && hit.collider.CompareTag("Wall");
     }
-
-    IEnumerator Attack()
-    {
-        isAttack = false;
-        player.GetComponent<Player>().HaveDamage(damage);
-        yield return new WaitForSeconds(1f);
-        isAttack = true;
-    }
     void Update()
     {
         if (Vector3.Distance(transform.position, player.transform.position) <= 10f && !IsWallBetween(transform.position, player.transform.position) && isStop)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            anim.SetTrigger("bite");
         }
         if (!isStop)
         {
-            if (isAttack) { StartCoroutine(Attack()); }
+            if (isAttack) { anim.SetTrigger("idle"); }
         }
     }
 

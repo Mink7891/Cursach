@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -77,6 +78,10 @@ public class Player : MonoBehaviour
 
     public void HaveDamage(int damage)
     {
+        if (hp <= 0)
+        {
+            SceneManager.LoadSceneAsync(2);
+        }
         hp -= damage;
         float hpLos = damage / hp;
         Vector2 currentOffsetMax = healthBar.offsetMax;

@@ -7,6 +7,11 @@ public class ControlButton : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
+    }
+
+    public void playAgain()
+    {
+        SceneManager.LoadSceneAsync(1);
     }
 }

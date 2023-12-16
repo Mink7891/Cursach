@@ -30,7 +30,19 @@ public class SpawnEnemy : MonoBehaviour
     {
         foreach (Transform point in points)
         {
-            Instantiate(pervak, point.position, Quaternion.identity);
+            GameObject pervakClone = Instantiate(pervak, point.position, Quaternion.identity);
+            if (point.position.x < -16f && point.position.x > -27f)
+            {
+                pervakClone.name = "Pervak(Clone)2";
+            }
+            else if (point.position.x < -34.96f && point.position.x > -47.1f && point.position.y > -3.08f && point.position.y < 8.01f)
+            {
+                pervakClone.name = "Pervak(Clone)4";
+            }
+            else if (point.position.x > -51.08f && point.position.x < -31.9f && point.position.y > 13.93f && point.position.y < 24.13f)
+            {
+                pervakClone.name = "Pervak(Clone)6";
+            }
         }
     }
 }

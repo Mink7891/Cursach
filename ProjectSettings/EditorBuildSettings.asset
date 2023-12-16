@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: e3ea09a6f29d4f94cae450d324590acb
+  - enabled: 1
+    path: Assets/Scenes/Strominka.unity
+    guid: bcaa3298c50cf5e4c9032220170112ed
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 4a35eef725456b14b84f18e774064a78
   m_configObjects: {}
