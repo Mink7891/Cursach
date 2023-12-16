@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14ee4b24de3a7474f85297e145ecc0cb
+guid: 4f1b6ee6502ddb44c96a71eaac067c74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,34 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: asd_0
+      name: shaurma_0
       rect:
         serializedVersion: 2
-        x: 192
-        y: 168
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a897f913c56aea4caaec06ece1b73fa
-      internalID: -939388588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: asd_1
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 9
-        width: 98
-        height: 57
+        x: 3
+        y: 0
+        width: 6
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fc1906443f40f24885a4d69b613365a
-      internalID: -1619060204
+      spriteID: 04e56727d60f93d409a13c71efb7780c
+      internalID: 641098235
       vertices: []
       indices: 
       edges: []
@@ -157,8 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      asd_1: -1619060204
-      asd_0: -939388588
+      shaurma_0: 641098235
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,0 +1,559 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 8175 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+D:/Unity/Projects/Cursach
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+58428
+Successfully changed project path to: D:/Unity/Projects/Cursach
+D:/Unity/Projects/Cursach
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 139.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/Projects/Cursach/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 650 (ID=0xfc6)
+    Vendor:   NVIDIA
+    VRAM:     984 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004608 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 138.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.961 seconds
+Domain Reload Profiling:
+	ReloadAssembly (962ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (704ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (169ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (418ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (139ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009403 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\Projects\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\Projects\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 168.04 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  8.983 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8984ms)
+		BeginReloadAssembly (192ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (8580ms)
+			LoadAssemblies (6692ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (401ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (120ms)
+			SetupLoadedEditorAssemblies (1283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (168ms)
+				BeforeProcessingInitializeOnLoad (164ms)
+				ProcessInitializeOnLoadAttributes (480ms)
+				ProcessInitializeOnLoadMethodAttributes (461ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 1.92 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (56.2 KB). Loaded Objects now: 4557.
+Memory consumption went from 154.1 MB to 154.0 MB.
+Total: 5.143300 ms (FindLiveObjects: 0.471700 ms CreateObjectMapping: 0.174400 ms MarkObjects: 4.347900 ms  DeleteObjects: 0.146800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 439096.902938 seconds.
+  path: Assets/SimplePixelUI/prefabs/Gray_black/square/buttons/button_small_2.prefab
+  artifactKey: Guid(1dab821edd288744a911586e55667f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePixelUI/prefabs/Gray_black/square/buttons/button_small_2.prefab using Guid(1dab821edd288744a911586e55667f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc9c9b9930d921d6907d68c2fc9d7af') in 1.045769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SimplePixelUI/prefabs/Gray_black/square/buttons/button_2.prefab
+  artifactKey: Guid(2db082929c3b46443adf1a5830854219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePixelUI/prefabs/Gray_black/square/buttons/button_2.prefab using Guid(2db082929c3b46443adf1a5830854219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755d5caafa087045c139792f8d8a40e9') in 0.323899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.860703 seconds.
+  path: Assets/Scenes/Floor2.unity
+  artifactKey: Guid(aec652e1c32532340b6f38ee0dad0f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floor2.unity using Guid(aec652e1c32532340b6f38ee0dad0f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c7a6eb167bdbf3230e993ffac1a28b') in 0.012770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 281.893142 seconds.
+  path: Assets/Prefabs/Book.prefab
+  artifactKey: Guid(048270734c5621042b570c951f4e90b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Book.prefab using Guid(048270734c5621042b570c951f4e90b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ba782bd939b883ff26ec35afb68e3e') in 0.550184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Prefabs/Bullet.prefab
+  artifactKey: Guid(7af2e155a409c6041899d782c5bd0723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bullet.prefab using Guid(7af2e155a409c6041899d782c5bd0723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a012f8cd869b263f54cb341eee32d2') in 0.100686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.427299 seconds.
+  path: Assets/popa/TileMap/Street/street.png
+  artifactKey: Guid(1a38be86c77b686428400bbc79da1265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Street/street.png using Guid(1a38be86c77b686428400bbc79da1265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b41e0f1ad58b9d1937d9cc99de6cae') in 0.307646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.978876 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/asd.png
+  artifactKey: Guid(14ee4b24de3a7474f85297e145ecc0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/asd.png using Guid(14ee4b24de3a7474f85297e145ecc0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ad707e5d060d6964c32d02de1c7751') in 0.176740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_5.asset
+  artifactKey: Guid(65d069e192e31ce4cb254d2d5abc4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_5.asset using Guid(65d069e192e31ce4cb254d2d5abc4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3abe81173180f3538260f882df1130') in 0.141893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/ground_6.asset
+  artifactKey: Guid(c6283ec2bd0c6c6458ada1f1d669aabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/ground_6.asset using Guid(c6283ec2bd0c6c6458ada1f1d669aabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96e137a70ca255dc774294f9f30bc16') in 0.151211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/ground_4.asset
+  artifactKey: Guid(51dd7f84113404e46bfdb465d3ba8abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/ground_4.asset using Guid(51dd7f84113404e46bfdb465d3ba8abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7acd45ef2e280a739176f01ae780bf2f') in 0.258753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_8.asset
+  artifactKey: Guid(974b6f4a608ee8d43b1125311e3f1322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_8.asset using Guid(974b6f4a608ee8d43b1125311e3f1322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ae14e43b0c21b9c5ad78514041a5c9') in 0.156150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_4.asset
+  artifactKey: Guid(9413a2f38c2104545b251af8d14268c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_4.asset using Guid(9413a2f38c2104545b251af8d14268c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453b55799311ba46f8062b88d36e20ec') in 0.270343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/new_decors.png
+  artifactKey: Guid(46b4446eee84af54ba2e9ba4aa609648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/new_decors.png using Guid(46b4446eee84af54ba2e9ba4aa609648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b887b268c2fa386cf5a5669d48aef512') in 0.434366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_7.asset
+  artifactKey: Guid(d81bb332ed0791a4ba42004f8188f90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_7.asset using Guid(d81bb332ed0791a4ba42004f8188f90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e027206178b5b753d4cc04bd952af19') in 0.032895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_0.asset
+  artifactKey: Guid(8a4bc2ad681dd4a4e8920dcf408cfb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_0.asset using Guid(8a4bc2ad681dd4a4e8920dcf408cfb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26771e4eb5a113d2646dfd20b1a00eb7') in 0.024272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_1.asset
+  artifactKey: Guid(371739534bbf0a74abfa7f02b549bd32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_1.asset using Guid(371739534bbf0a74abfa7f02b549bd32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8556737de0e71a2facd382f7d7ee57') in 0.029718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/ground_2.asset
+  artifactKey: Guid(dff22775543d4da43b9c6de81e3583f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/ground_2.asset using Guid(dff22775543d4da43b9c6de81e3583f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddccea621bbf85112c7d91137cb1c10e') in 0.025160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_11.asset
+  artifactKey: Guid(d4b46aa1e8f49ca47af31c0c8eac4865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_11.asset using Guid(d4b46aa1e8f49ca47af31c0c8eac4865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527d7255fc428795bd818c8ef88547c6') in 0.027258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/ground_3.asset
+  artifactKey: Guid(8d43fe4d086cd1242bd4b6d611bd77fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/ground_3.asset using Guid(8d43fe4d086cd1242bd4b6d611bd77fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723ac0a51ab1797413637b1ff9264f31') in 0.025040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/walls.png
+  artifactKey: Guid(6a87be31bc7d98d4e90e5b623fd941ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/walls.png using Guid(6a87be31bc7d98d4e90e5b623fd941ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b233bdfe290a4142feab49575fb1036') in 0.425395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_9.asset
+  artifactKey: Guid(356f7dd1916af654f86e12c9e9b7c363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_9.asset using Guid(356f7dd1916af654f86e12c9e9b7c363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '235c5dc749e66ef17e9c077b79c65714') in 0.033694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/newwalls_3.asset
+  artifactKey: Guid(17662be58fa5f1242864f760e1cf2da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/newwalls_3.asset using Guid(17662be58fa5f1242864f760e1cf2da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5affafa0150797329eef1f68e0671748') in 0.212102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/NewWalls.prefab
+  artifactKey: Guid(089d6987d679d67468e99c1dd4e83be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/NewWalls.prefab using Guid(089d6987d679d67468e99c1dd4e83be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3eaa1336a0c4a5b6f5482eba48ed208') in 0.105667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4027.516677 seconds.
+  path: Assets/popa/Ksenuch/better-vcr-5.2.ttf
+  artifactKey: Guid(969c7e92aff9e5e44981cf8dc78c2c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/better-vcr-5.2.ttf using Guid(969c7e92aff9e5e44981cf8dc78c2c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f253a5b447e1e956d0948b2ab5284ac') in 3.639163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007873 seconds.
+  path: Assets/popa/Ksenuch/left down Ksenich.png
+  artifactKey: Guid(db32c9bb36da60e40aebabe70da3f0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/left down Ksenich.png using Guid(db32c9bb36da60e40aebabe70da3f0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244d8f03ce1616975de50ba41f9d1eb2') in 0.318380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/popa/Ksenuch/idle Ksenich.png
+  artifactKey: Guid(78454ec665cf999478db4b6179d3c55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/idle Ksenich.png using Guid(78454ec665cf999478db4b6179d3c55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b6ce912d35264e2767ac2a31d4f0fe4') in 0.288315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/popa/Ksenuch/down walk Bogush.png
+  artifactKey: Guid(3c30cc6e4eabffd44b28d5bcc245c582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/down walk Bogush.png using Guid(3c30cc6e4eabffd44b28d5bcc245c582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c5ffd806b6120f7f556f117a163e26') in 0.240205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/popa/Ksenuch/kb_tilemap_1.asset
+  artifactKey: Guid(9cbbc12fdedbad04599162de5526b491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/kb_tilemap_1.asset using Guid(9cbbc12fdedbad04599162de5526b491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a623329a790ee3879d8dae5415da515') in 0.160335 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008563 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\Projects\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\Projects\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.755 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2756ms)
+		BeginReloadAssembly (915ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (58ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (612ms)
+		EndReloadAssembly (1689ms)
+			LoadAssemblies (231ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (731ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (590ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4076 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.7 KB). Loaded Objects now: 4667.
+Memory consumption went from 156.9 MB to 156.9 MB.
+Total: 5.412600 ms (FindLiveObjects: 0.490200 ms CreateObjectMapping: 0.173400 ms MarkObjects: 4.667400 ms  DeleteObjects: 0.079800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 462.301410 seconds.
+  path: Assets/popa/MainCharacter/left walk MainCharacter.png
+  artifactKey: Guid(ee07640c54260234faca11d0b0a1b1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/MainCharacter/left walk MainCharacter.png using Guid(ee07640c54260234faca11d0b0a1b1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eebbc650142656b97a514f39a4e272f4') in 0.165176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/popa/MainCharacter/up walk MainCharacter.png
+  artifactKey: Guid(6b9f4209fa665f848bd63fdb0d408e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/MainCharacter/up walk MainCharacter.png using Guid(6b9f4209fa665f848bd63fdb0d408e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59564e3f80881805fecb14508c819374') in 0.178738 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009053 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity\Projects\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity\Projects\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.728 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2730ms)
+		BeginReloadAssembly (592ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (62ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (192ms)
+		EndReloadAssembly (1931ms)
+			LoadAssemblies (354ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (755ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (125ms)
+			SetupLoadedEditorAssemblies (724ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (151ms)
+				ProcessInitializeOnLoadAttributes (467ms)
+				ProcessInitializeOnLoadMethodAttributes (78ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4076 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4680.
+Memory consumption went from 157.0 MB to 156.9 MB.
+Total: 55.321600 ms (FindLiveObjects: 0.575400 ms CreateObjectMapping: 0.210400 ms MarkObjects: 54.440100 ms  DeleteObjects: 0.093100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5580.221011 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/asd_0.asset
+  artifactKey: Guid(56cf55c3eaccb1b49bad2270e944e229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/asd_0.asset using Guid(56cf55c3eaccb1b49bad2270e944e229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdc3a6e0dcb197375d85c3b8388058b') in 2.031643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 193.120622 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_7.asset
+  artifactKey: Guid(443be6590fc777f4985f773740fd1f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_7.asset using Guid(443be6590fc777f4985f773740fd1f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebe8f19847b8543bdb792c84378b818') in 0.508070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_15.asset
+  artifactKey: Guid(658c90328d48e5146afb66714c9687ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_15.asset using Guid(658c90328d48e5146afb66714c9687ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b04b57230745a1f40eefca4465a440') in 0.308787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_55.asset
+  artifactKey: Guid(69c7be3754204de40a62ef328368b05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_55.asset using Guid(69c7be3754204de40a62ef328368b05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80063346ed0c42f30e545b3b33833f6d') in 0.133631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_22.asset
+  artifactKey: Guid(be9f4d92c5ec3f145b92add8124b5b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_22.asset using Guid(be9f4d92c5ec3f145b92add8124b5b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad116b7b720602cba8fec5b0830a451b') in 0.072275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_88.asset
+  artifactKey: Guid(20f77b9cbebc720468febfac92c9620a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_88.asset using Guid(20f77b9cbebc720468febfac92c9620a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b04d3dd430c961ac4ad64ac08cc970d') in 0.105235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_10.asset
+  artifactKey: Guid(ecb017183f9864d419913a5af30b79b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_10.asset using Guid(ecb017183f9864d419913a5af30b79b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43481769e39cb680a728b307203a678') in 0.080712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_86.asset
+  artifactKey: Guid(e1ed2e34b02dbe84eb5f060e3fcc91f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_86.asset using Guid(e1ed2e34b02dbe84eb5f060e3fcc91f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ade2c524a7575102dde0412f995b1bd') in 0.555547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_50.asset
+  artifactKey: Guid(16b7c7b5763288d4b84762fd96c4afdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_50.asset using Guid(16b7c7b5763288d4b84762fd96c4afdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ced01b069400086731b1bd43308580') in 0.140448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_31.asset
+  artifactKey: Guid(7ab98d09561718c4db2d6234baab3f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_31.asset using Guid(7ab98d09561718c4db2d6234baab3f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5112858c00b196c0ac7f9aebd3c84a47') in 0.243844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_12.asset
+  artifactKey: Guid(f15574e579edc7f468e8ad4c025ff9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_12.asset using Guid(f15574e579edc7f468e8ad4c025ff9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17bb01a15a0a65e0c5efbaf45b20a55a') in 0.060267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_102.asset
+  artifactKey: Guid(cc38e10c7230ccc47b55f2c3a2e32e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_102.asset using Guid(cc38e10c7230ccc47b55f2c3a2e32e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ee94933e5456b8aaa7fc73de20644b') in 0.138290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_59.asset
+  artifactKey: Guid(81472e28ccc9dc5438639d83178b820b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_59.asset using Guid(81472e28ccc9dc5438639d83178b820b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489c1ab55a2194d05d8089596d965fd7') in 0.287531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_53.asset
+  artifactKey: Guid(ff5f91b40020ecc44b32f1cf794ff6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_53.asset using Guid(ff5f91b40020ecc44b32f1cf794ff6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50fddb5afb53bbb747013214eed99c9a') in 0.190179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_101.asset
+  artifactKey: Guid(9db8f9e0e796f4948a5ca02575ded6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_101.asset using Guid(9db8f9e0e796f4948a5ca02575ded6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ebe715a892b1c09465c134501dd992') in 0.039451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_14.asset
+  artifactKey: Guid(b10978dfbe884ec44b3d458b245554f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_14.asset using Guid(b10978dfbe884ec44b3d458b245554f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f223e809fd7b4d4f3810872c8598a6') in 0.111515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/Mas/walls_19.asset
+  artifactKey: Guid(b6e55167c8fe0184e9b80145d880e8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/Mas/walls_19.asset using Guid(b6e55167c8fe0184e9b80145d880e8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9415b852bd600a4791b3908d51024a00') in 0.128075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 943.824841 seconds.
+  path: Assets/popa/TileMap/Strominka/Pallete/NewWalls.prefab
+  artifactKey: Guid(089d6987d679d67468e99c1dd4e83be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/TileMap/Strominka/Pallete/NewWalls.prefab using Guid(089d6987d679d67468e99c1dd4e83be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a2cd0af8eaa3fc30679d286014fc73') in 3.360732 seconds 
