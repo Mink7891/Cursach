@@ -31,4 +31,11 @@ public class CharacterController : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+
+
+
+
+
+    
+
 }

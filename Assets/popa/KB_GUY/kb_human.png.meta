@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1a38be86c77b686428400bbc79da1265
+guid: fb84f8d2cfb5d92458fa5cd52c77cf30
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,55 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: street_0
+      name: kb_human_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 120
-        width: 337
-        height: 136
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2315953e079ae845939c3a6d7c9425b
-      internalID: -1653072274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: street_2
-      rect:
-        serializedVersion: 2
-        x: 431
-        y: 137
-        width: 122
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86ad8d65a29d3f64fb5ae65fae1b9c01
-      internalID: 1073981163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: street_3
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 1
-        width: 24
-        height: 24
+        x: 57
+        y: 63
+        width: 20
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c778b0150f6b7041a5a1f101a4da379
-      internalID: 592213594
+      spriteID: bffd5b07ca57cce42ab1f4416f495710
+      internalID: -1255876057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: street_1
+      name: kb_human_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 24
-        height: 24
+        x: 14
+        y: 52
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,29 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69ce9512de01b394888a2d0a50edd908
-      internalID: 1356847959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: street_4
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 25
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9222d16f6843cc468689e8854c1c55a
-      internalID: -1417907971
+      spriteID: f68220d3d52ded04ca8c3f430ea80ffe
+      internalID: -249817950
       vertices: []
       indices: 
       edges: []
@@ -220,11 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      street_0: -1653072274
-      street_2: 1073981163
-      street_3: 592213594
-      street_1: 1356847959
-      street_4: -1417907971
+      kb_human_1: -249817950
+      kb_human_0: -1255876057
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
