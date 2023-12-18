@@ -41,10 +41,10 @@ public class BookBoss : MonoBehaviour
             //collision.gameObject.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
 
 
-            if (collision.gameObject.GetComponent<Player>().hp <= 0)
-            {
-                Destroy(collision.gameObject);
-            }
+            //if (collision.gameObject.GetComponent<Player>().hp <= 0)
+            //{
+            //    Destroy(collision.gameObject);
+            //}
         }
         else if (collision.gameObject.CompareTag("Wall"))
         {

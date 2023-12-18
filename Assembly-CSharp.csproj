@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\WalkEnemy.cs" />
     <Compile Include="Assets\Script\Bogush.cs" />
+    <Compile Include="Assets\kbinput.cs" />
     <Compile Include="Assets\Script\Kashkin.cs" />
     <Compile Include="Assets\Script\Book.cs" />
     <Compile Include="Assets\Script\CheckEnemyRooms.cs" />
@@ -71,7 +72,10 @@
     <Compile Include="Assets\Script\Line.cs" />
     <Compile Include="Assets\Script\Ksenich.cs" />
     <Compile Include="Assets\popa\Ksenuch\GuardianScript.cs" />
+    <Compile Include="Assets\popa\Ksenuch\Task.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
+    <Compile Include="Assets\popa\Ksenuch\EventTrigger.cs" />
     <Compile Include="Assets\Script\Ladder.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogTrigger.cs" />
     <Compile Include="Assets\popa\Ksenuch\Dialog.cs" />
@@ -79,6 +83,7 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
+    <Compile Include="Assets\Script\SaveManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -878,6 +883,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshPlusEditor.csproj">
+      <Project>{0AFC40C2-614A-79A3-EE64-54DB77AB1F19}</Project>
+      <Name>NavMeshPlusEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshPlus.csproj">
+      <Project>{30E8469C-605C-EB50-BD64-B0161E5238A1}</Project>
+      <Name>NavMeshPlus</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

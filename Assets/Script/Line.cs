@@ -7,29 +7,28 @@ public class Line : MonoBehaviour
     private LineRenderer lineRenderer;
     private bool temp;
     private GameObject player;
-    private void Start()
+    private void Awake()
     {
         player = GameObject.Find("Player");
         lineRenderer = gameObject.GetComponent<LineRenderer>();
-        // Дополнительные настройки луча могут быть добавлены по вашему усмотрению
         lineRenderer.startColor = Color.red;
         lineRenderer.endColor = Color.red;
         lineRenderer.widthMultiplier = 0.1f;
-
     }
+
     private void OnEnable()
     {
         temp = true;
     }
     private void OnDisable()
     {
-        player.GetComponent<Player>().speedShoot = 700f;
+        player.GetComponent<Player>().speedShoot = 500f;
     }
-    public void AttackLine(Transform player)
+    public void AttackLine()
     {
         // Создаем луч от объекта к игроку
         Vector3 start = transform.position;
-        Vector3 end = player.position;
+        Vector3 end = player.transform.position;
         Vector3 directionToPlayer = (end - start).normalized;
 
         // Отобразить луч в сцене

@@ -9,7 +9,7 @@ public class DamageRadius : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             StartCoroutine(Damage(collision.gameObject, 2f));
-            collision.gameObject.GetComponent<Player>().speed = 5f;
+            //collision.gameObject.GetComponent<Player>().speed = 5f;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -17,7 +17,7 @@ public class DamageRadius : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             StopCoroutine(nameof(Damage));
-            collision.gameObject.GetComponent<Player>().speed = 7f;
+            //collision.gameObject.GetComponent<Player>().speed = 7f;
         }
     }
 
@@ -36,7 +36,7 @@ public class DamageRadius : MonoBehaviour
             //player.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
             //player.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
 
-            player.GetComponent<Player>().hp -= 100;
+            //player.GetComponent<Player>().hp -= 100;
             yield return new WaitForSeconds(delay);
         }
     }

@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Pervak : MonoBehaviour
 {
     private GameObject player;
     private Animator anim;
     private bool isStop = true;
-    public int speed;
     public int damage;
     public int hp;
+    private NavMeshAgent agent;
     private void Start()
     {
         anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
+
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -35,7 +40,11 @@ public class Pervak : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.transform.position) <= 10f && !IsWallBetween(transform.position, player.transform.position) && isStop)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            agent.SetDestination(player.transform.position);
+        }
+        else
+        {
+            agent.ResetPath();
         }
     }
 
