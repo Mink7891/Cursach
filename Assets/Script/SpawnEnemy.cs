@@ -25,8 +25,7 @@ public class SpawnEnemy : MonoBehaviour
     //    }
     //}
 
-
-    private void Start()
+    private void Awake()
     {
         foreach (Transform point in points)
         {

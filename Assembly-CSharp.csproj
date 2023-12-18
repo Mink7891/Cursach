@@ -75,6 +75,7 @@
     <Compile Include="Assets\popa\Ksenuch\Task.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
+    <Compile Include="Assets\Script\SaveManager.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventTrigger.cs" />
     <Compile Include="Assets\Script\Ladder.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogTrigger.cs" />
@@ -83,7 +84,6 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\Script\SaveManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
