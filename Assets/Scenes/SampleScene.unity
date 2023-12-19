@@ -353,7 +353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60851e873178a545b0ded3c5c1fbcec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   hp: 100
   damage: 25
 --- !u!50 &141367188
@@ -2062,7 +2061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5009ed93f745324aa575c4caddf51cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ksenich: {fileID: 7408895498547732032, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+  points: []
+  pervak: {fileID: 0}
 --- !u!4 &1457950822
 Transform:
   m_ObjectHideFlags: 0

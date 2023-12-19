@@ -21,9 +21,13 @@ public class ControlDoor : MonoBehaviour
         {
             doors[5].SetActive(false);
         }
-        if (!(GameObject.Find("Pervak(Clone)")))
+        if (!(GameObject.Find("Pervak(Clone)8")))
         {
             doors[7].SetActive(false);
+        }
+        if (!(GameObject.Find("Pervak(Clone)10")) && doors.Length >= 10)
+        {
+            doors[9].SetActive(false);
         }
     }
 }

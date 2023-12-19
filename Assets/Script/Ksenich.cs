@@ -1,63 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Ksenich : MonoBehaviour
 {
     private GameObject player;
     public GameObject book;
-    public float speed;
-    private bool temp = false;
     public int hp = 100;
     private Animator anim;
     private int countBook = 0;
     private bool canShoot = true;
-    private bool isMoving = true;
-    public Transform[] waipoint1;
+    //private bool isMoving = true;
     public int damage;
+    private NavMeshAgent agent;
     private void Start()
     {
         anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
+
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
-    private void OnCollisionEnter2D(Collision2D collision) { if (collision.gameObject.name == "Player") temp = true; }
-    private void OnCollisionExit2D(Collision2D collision) { if (collision.gameObject.name == "Player") temp = false; }
 
     private void ShootBook(Vector3 targetPosition)
     {
         GameObject books = Instantiate(book, transform.position, Quaternion.identity);
         Vector2 direction = (targetPosition - books.transform.position).normalized;
-        books.GetComponent<Rigidbody2D>().AddForce(direction * 1000f);
+        books.GetComponent<Rigidbody2D>().AddForce(direction * 700f);
     }
 
-    bool IsWallBetween(Vector3 start, Vector3 end)
-    {
-        int layerMask = ~LayerMask.GetMask("EnemyLayer");
-        RaycastHit2D hit = Physics2D.Raycast(start, (end - start).normalized, Vector2.Distance(start, end), layerMask);
-
-        return hit.collider != null && hit.collider.CompareTag("Wall");
-    }
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) >= 10f || IsWallBetween(transform.position, player.transform.position))
+        if (Vector3.Distance(transform.position, player.transform.position) <= 13 && Vector3.Distance(transform.position, player.transform.position) > 5)
         {
-            if (isMoving) StartCoroutine(MoveToWaypoint());
-            return;
+            GetComponent<WalkEnemy>().AnimWalk(player.transform, anim);
+            Attack();
+            agent.SetDestination(player.transform.position);
         }
         else
         {
-            if (temp)
+            anim.SetTrigger("idle");
+            agent.ResetPath();
+            if (Vector3.Distance(transform.position, player.transform.position) <= 5)
             {
                 Attack();
-                anim.SetTrigger("idle");
             }
-            else
-            {
-                GetComponent<WalkEnemy>().AnimWalk(player.transform, anim);
-                Attack();
-                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            }
-
         }
     }
 
@@ -73,36 +62,13 @@ public class Ksenich : MonoBehaviour
     {
         if (canShoot && countBook < 3)
         {
-            StartCoroutine(ShootWithDelay(player.transform.position, 0.3f));
+            StartCoroutine(ShootWithDelay(player.transform.position, 0.5f));
         }
         else if (countBook == 3)
         {
             transform.GetChild(0).gameObject.SetActive(true);
             Invoke(nameof(DeleteRadiusDamage), 0.5f);
         }
-    }
-    private IEnumerator MoveToWaypoint()
-    {
-        isMoving = false;
- 
-        Transform point = waipoint1[Random.Range(0, waipoint1.Length)];
-  
-        while (transform.position != point.position)
-        {
-            if (Vector3.Distance(transform.position, player.transform.position) < 10f && !IsWallBetween(transform.position, player.transform.position))
-            {
-                break;
-            }
-            transform.position = Vector2.MoveTowards(transform.position, point.position, speed * Time.deltaTime);
-            GetComponent<WalkEnemy>().AnimWalk(point, anim);
-
-            yield return null;
-        }
-
-        yield return new WaitForSeconds(0.1f);
-        anim.SetTrigger("idle");
-        yield return new WaitForSeconds(2f);
-        isMoving = true;
     }
 
     private void DeleteRadiusDamage()

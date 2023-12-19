@@ -23,37 +23,86 @@ public class PointsDoor : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Player"))
         {
-            if(doors.GetComponent<ControlDoor>().points[index - 1].position.x > collision.gameObject.transform.position.x && index != 3 && index != 5)
+            if (PlayerPrefs.GetInt("Scene") < 3)
             {
-                switch (index)
+                if (doors.GetComponent<ControlDoor>().points[index - 1].position.x > collision.gameObject.transform.position.x && index != 3 && index != 5)
                 {
-                    case 1:
-                        doors.GetComponent<ControlDoor>().doors[0].SetActive(true);
-                        break;
+                    switch (index)
+                    {
+                        case 1:
+                            doors.GetComponent<ControlDoor>().doors[0].SetActive(true);
+                            break;
 
-                    case 2:
-                        doors.GetComponent<ControlDoor>().doors[2].SetActive(true);
-                        break;
+                        case 2:
+                            doors.GetComponent<ControlDoor>().doors[2].SetActive(true);
+                            break;
 
-                    case 4:
-                        doors.GetComponent<ControlDoor>().doors[6].SetActive(true);
-                        break;
+                        case 4:
+                            doors.GetComponent<ControlDoor>().doors[6].SetActive(true);
+                            break;
+                    }
+                }
+                else
+                {
+                    if (index == 3 && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
+                    {
+                        doors.GetComponent<ControlDoor>().doors[4].SetActive(true);
+                    }
+                    if (index == 5 && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
+                    {
+                        doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
+                    }
                 }
             }
-            else
+            else if (PlayerPrefs.GetInt("Scene") == 3)
             {
-                if (index == 3 && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
+                if (doors.GetComponent<ControlDoor>().points[index - 1].position.x < collision.gameObject.transform.position.x && index < 3)
                 {
-                    doors.GetComponent<ControlDoor>().doors[4].SetActive(true);
+                    switch (index)
+                    {
+                        case 1:
+                            doors.GetComponent<ControlDoor>().doors[0].SetActive(true);
+                            break;
+
+                        case 2:
+                            doors.GetComponent<ControlDoor>().doors[2].SetActive(true);
+                            break;
+                    }
                 }
-                if (index == 5 && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
+                else if ((index == 3 || index == 6 || index == 7) && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
                 {
-                    doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
+                    switch (index)
+                    {
+                        case 3:
+                            doors.GetComponent<ControlDoor>().doors[4].SetActive(true);
+                            break;
+
+                        case 6:
+                            doors.GetComponent<ControlDoor>().doors[10].SetActive(true);
+                            break;
+
+                        case 7:
+                            doors.GetComponent<ControlDoor>().doors[11].SetActive(true);
+                            break;
+                    }
+                }
+                else if (doors.GetComponent<ControlDoor>().points[index - 1].position.x > collision.gameObject.transform.position.x)
+                {
+                    switch (index)
+                    {
+                        case 4:
+                            doors.GetComponent<ControlDoor>().doors[6].SetActive(true);
+                            break;
+
+                        case 5:
+                            doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
+                            break;
+                    }
                 }
             }
-            
         }
     }
 }

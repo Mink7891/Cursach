@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 19559688}
   m_Layer: 0
   m_Name: decors-3_0 (12)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 36238943}
   m_Layer: 0
   m_Name: decors-3_16 (10)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 52731014}
   m_Layer: 0
   m_Name: decors-3_9 (16)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 69324519}
   m_Layer: 0
   m_Name: decors-3_8
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 85323105}
   m_Layer: 0
   m_Name: decors-3_21 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 86358295}
   m_Layer: 0
   m_Name: new_decors_4
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 103490032}
   m_Layer: 0
   m_Name: decors-3_23
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1315,7 +1315,7 @@ GameObject:
   - component: {fileID: 107570467}
   m_Layer: 0
   m_Name: decors-3_21 (13)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1703,7 +1703,7 @@ GameObject:
   - component: {fileID: 157572733}
   m_Layer: 0
   m_Name: decors-3_16 (13)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 179279729}
   m_Layer: 0
   m_Name: decors-3_16 (7)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1959,7 +1959,7 @@ GameObject:
   - component: {fileID: 184646823}
   m_Layer: 0
   m_Name: decors-3_0 (30)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2087,7 +2087,7 @@ GameObject:
   - component: {fileID: 200262656}
   m_Layer: 0
   m_Name: decors-3_21 (9)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2214,7 +2214,7 @@ GameObject:
   - component: {fileID: 200353597}
   m_Layer: 0
   m_Name: new_decors_7 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2347,7 +2347,7 @@ GameObject:
   - component: {fileID: 231611935}
   m_Layer: 0
   m_Name: decors-3_0
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2474,7 +2474,7 @@ GameObject:
   - component: {fileID: 244441914}
   m_Layer: 0
   m_Name: decors-3_20 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2576,7 +2576,7 @@ GameObject:
   - component: {fileID: 246072473}
   m_Layer: 0
   m_Name: decors-3_16 (6)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2704,7 +2704,7 @@ GameObject:
   - component: {fileID: 274910748}
   m_Layer: 0
   m_Name: decors-3_1 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2832,7 +2832,7 @@ GameObject:
   - component: {fileID: 274961711}
   m_Layer: 0
   m_Name: decors-3_0 (22)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2960,7 +2960,7 @@ GameObject:
   - component: {fileID: 280421043}
   m_Layer: 0
   m_Name: decors-3_21 (10)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3150,7 +3150,7 @@ GameObject:
   - component: {fileID: 290771810}
   m_Layer: 0
   m_Name: new_decors_9 (6)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3278,7 +3278,7 @@ GameObject:
   - component: {fileID: 291962219}
   m_Layer: 0
   m_Name: decors-3_0 (8)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3555,7 +3555,7 @@ GameObject:
   - component: {fileID: 330787557}
   m_Layer: 0
   m_Name: decors-3_0 (7)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3682,7 +3682,7 @@ GameObject:
   - component: {fileID: 335094623}
   m_Layer: 0
   m_Name: new_decors_16
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4043,7 +4043,7 @@ GameObject:
   - component: {fileID: 359010479}
   m_Layer: 0
   m_Name: decors-3_21 (6)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4171,7 +4171,7 @@ GameObject:
   - component: {fileID: 360721502}
   m_Layer: 0
   m_Name: decors-3_0 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4329,7 +4329,7 @@ GameObject:
   - component: {fileID: 383917334}
   m_Layer: 0
   m_Name: new_decors_3 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4516,7 +4516,7 @@ GameObject:
   - component: {fileID: 397242047}
   m_Layer: 0
   m_Name: acid_0
-  m_TagString: Puddle
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4695,7 +4695,7 @@ GameObject:
   - component: {fileID: 402965557}
   m_Layer: 0
   m_Name: new_decors_9 (7)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4822,7 +4822,7 @@ GameObject:
   - component: {fileID: 409521295}
   m_Layer: 0
   m_Name: decors-3_5 (8)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4924,7 +4924,7 @@ GameObject:
   - component: {fileID: 410096939}
   m_Layer: 0
   m_Name: decors-3_0 (13)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5052,7 +5052,7 @@ GameObject:
   - component: {fileID: 413189821}
   m_Layer: 0
   m_Name: new_decors_9 (8)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5179,7 +5179,7 @@ GameObject:
   - component: {fileID: 422814357}
   m_Layer: 0
   m_Name: new_decors_7
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5281,7 +5281,7 @@ GameObject:
   - component: {fileID: 426214649}
   m_Layer: 0
   m_Name: decors-3_15 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5409,7 +5409,7 @@ GameObject:
   - component: {fileID: 440652246}
   m_Layer: 0
   m_Name: decors-3_0 (24)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5537,7 +5537,7 @@ GameObject:
   - component: {fileID: 449517654}
   m_Layer: 0
   m_Name: decors-3_9 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5665,7 +5665,7 @@ GameObject:
   - component: {fileID: 453791704}
   m_Layer: 0
   m_Name: decors-3_0 (16)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5793,7 +5793,7 @@ GameObject:
   - component: {fileID: 457121026}
   m_Layer: 0
   m_Name: decors-3_0 (31)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5920,7 +5920,7 @@ GameObject:
   - component: {fileID: 467043537}
   m_Layer: 0
   m_Name: new_decors_7 (7)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6115,7 +6115,7 @@ GameObject:
   - component: {fileID: 498378362}
   m_Layer: 0
   m_Name: decors-3_0 (17)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6318,7 +6318,7 @@ GameObject:
   - component: {fileID: 511368849}
   m_Layer: 0
   m_Name: decors-3_8 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6420,7 +6420,7 @@ GameObject:
   - component: {fileID: 512410272}
   m_Layer: 0
   m_Name: decors-3_1
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6548,7 +6548,7 @@ GameObject:
   - component: {fileID: 514306318}
   m_Layer: 0
   m_Name: decors-3_15
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6675,7 +6675,7 @@ GameObject:
   - component: {fileID: 514816408}
   m_Layer: 0
   m_Name: new_decors_11
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6776,7 +6776,7 @@ GameObject:
   - component: {fileID: 517446423}
   m_Layer: 0
   m_Name: new_decors_9
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6878,7 +6878,7 @@ GameObject:
   - component: {fileID: 549083987}
   m_Layer: 0
   m_Name: new_decors_8
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7006,7 +7006,7 @@ GameObject:
   - component: {fileID: 554390927}
   m_Layer: 0
   m_Name: decors-3_21 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7134,7 +7134,7 @@ GameObject:
   - component: {fileID: 565083637}
   m_Layer: 0
   m_Name: new_decors_5
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7293,7 +7293,7 @@ GameObject:
   - component: {fileID: 614478003}
   m_Layer: 0
   m_Name: new_decors_10 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7421,7 +7421,7 @@ GameObject:
   - component: {fileID: 624845094}
   m_Layer: 0
   m_Name: decors-3_0 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7580,7 +7580,7 @@ GameObject:
   - component: {fileID: 641283081}
   m_Layer: 0
   m_Name: decors-3_22 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7708,7 +7708,7 @@ GameObject:
   - component: {fileID: 649079466}
   m_Layer: 0
   m_Name: decors-3_1 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7836,7 +7836,7 @@ GameObject:
   - component: {fileID: 652738281}
   m_Layer: 0
   m_Name: decors-3_16 (18)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7950,6 +7950,141 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &670097951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670097952}
+  - component: {fileID: 670097954}
+  - component: {fileID: 670097953}
+  m_Layer: 5
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &670097952
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670097951}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1907060470}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 138.45819, y: 25}
+  m_SizeDelta: {x: 276.9164, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &670097953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670097951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 2 Level
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
+  m_sharedMaterial: {fileID: 19159866401745315, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278241023
+  m_fontColor: {r: 1, g: 0.7769345, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -0.000061035156, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &670097954
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670097951}
+  m_CullTransparentMesh: 1
 --- !u!1 &674154402
 GameObject:
   m_ObjectHideFlags: 0
@@ -7964,7 +8099,7 @@ GameObject:
   - component: {fileID: 674154406}
   m_Layer: 0
   m_Name: decors-3_0 (27)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8300,7 +8435,7 @@ GameObject:
   - component: {fileID: 684654724}
   m_Layer: 0
   m_Name: decors-3_12
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8428,7 +8563,7 @@ GameObject:
   - component: {fileID: 686691007}
   m_Layer: 0
   m_Name: decors-3_2 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8556,7 +8691,7 @@ GameObject:
   - component: {fileID: 689234586}
   m_Layer: 0
   m_Name: decors-3_16 (11)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8683,7 +8818,7 @@ GameObject:
   - component: {fileID: 703798475}
   m_Layer: 0
   m_Name: asd_1
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8785,7 +8920,7 @@ GameObject:
   - component: {fileID: 704788885}
   m_Layer: 0
   m_Name: decors-3_11 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8912,7 +9047,7 @@ GameObject:
   - component: {fileID: 711113480}
   m_Layer: 0
   m_Name: decors-3_5 (16)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9014,7 +9149,7 @@ GameObject:
   - component: {fileID: 734474845}
   m_Layer: 0
   m_Name: decors-3_1 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9142,7 +9277,7 @@ GameObject:
   - component: {fileID: 737305802}
   m_Layer: 0
   m_Name: decors-3_16 (16)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9270,7 +9405,7 @@ GameObject:
   - component: {fileID: 761100921}
   m_Layer: 0
   m_Name: decors-3_0 (6)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9398,7 +9533,7 @@ GameObject:
   - component: {fileID: 764304517}
   m_Layer: 0
   m_Name: decors-3_0 (19)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9526,7 +9661,7 @@ GameObject:
   - component: {fileID: 815017272}
   m_Layer: 0
   m_Name: decors-3_0 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9654,7 +9789,7 @@ GameObject:
   - component: {fileID: 822663374}
   m_Layer: 0
   m_Name: decors-3_16 (14)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9782,7 +9917,7 @@ GameObject:
   - component: {fileID: 825060054}
   m_Layer: 0
   m_Name: decors-3_5 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9896,6 +10031,151 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1001 &863305209
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7408895498292095497, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498292095500, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732032, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_Name
+      value: Ksenich
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732032, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732032, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -78.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 70.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732090, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732092, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: damage
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[10]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408895498547732093, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+      propertyPath: waipoint1.Array.data[11]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
 --- !u!1 &873636115
 GameObject:
   m_ObjectHideFlags: 0
@@ -9989,7 +10269,7 @@ GameObject:
   - component: {fileID: 880071830}
   m_Layer: 0
   m_Name: new_decors_9 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10207,7 +10487,7 @@ GameObject:
   - component: {fileID: 896659433}
   m_Layer: 0
   m_Name: decors-3_21 (7)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10335,7 +10615,7 @@ GameObject:
   - component: {fileID: 913703378}
   m_Layer: 0
   m_Name: new_decors_8 (9)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10463,7 +10743,7 @@ GameObject:
   - component: {fileID: 916523946}
   m_Layer: 0
   m_Name: decors-3_16 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10591,7 +10871,7 @@ GameObject:
   - component: {fileID: 931120240}
   m_Layer: 0
   m_Name: new_decors_8 (8)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10718,7 +10998,7 @@ GameObject:
   - component: {fileID: 946467199}
   m_Layer: 0
   m_Name: walls_0
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10968,7 +11248,7 @@ GameObject:
   - component: {fileID: 974505731}
   m_Layer: 0
   m_Name: decors-3_5 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11070,7 +11350,7 @@ GameObject:
   - component: {fileID: 999909237}
   m_Layer: 0
   m_Name: decors-3_5
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11197,7 +11477,7 @@ GameObject:
   - component: {fileID: 1000258392}
   m_Layer: 0
   m_Name: decors-3_5 (6)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11299,7 +11579,7 @@ GameObject:
   - component: {fileID: 1000853309}
   m_Layer: 0
   m_Name: decors-3_4
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11444,6 +11724,45 @@ Transform:
   m_Father: {fileID: 344472168}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1005044322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7408895498547732032, guid: d7fbd0289689ff74cbd52d66c7e5a3d8, type: 3}
+  m_PrefabInstance: {fileID: 863305209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1005044323
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005044322}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.11999999
+  m_Speed: 3
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.28999996
+  m_BaseOffset: 0.14499998
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1005044324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005044322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997ee55dea99bb64dae9ac1f4b75920c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1008842096
 GameObject:
   m_ObjectHideFlags: 0
@@ -11458,7 +11777,7 @@ GameObject:
   - component: {fileID: 1008842100}
   m_Layer: 0
   m_Name: decors-3_5 (15)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11586,7 +11905,7 @@ GameObject:
   - component: {fileID: 1009038527}
   m_Layer: 0
   m_Name: decors-3_21 (11)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11713,7 +12032,7 @@ GameObject:
   - component: {fileID: 1013131791}
   m_Layer: 0
   m_Name: new_decors_15
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11815,7 +12134,7 @@ GameObject:
   - component: {fileID: 1013360032}
   m_Layer: 0
   m_Name: decors-3_22 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11942,7 +12261,7 @@ GameObject:
   - component: {fileID: 1014824000}
   m_Layer: 0
   m_Name: new_decors_3
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12044,7 +12363,7 @@ GameObject:
   - component: {fileID: 1017635115}
   m_Layer: 0
   m_Name: decors-3_1 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12171,7 +12490,7 @@ GameObject:
   - component: {fileID: 1021334444}
   m_Layer: 0
   m_Name: decors-3_5 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12272,7 +12591,7 @@ GameObject:
   - component: {fileID: 1033971730}
   m_Layer: 0
   m_Name: decors-3_6
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12405,7 +12724,7 @@ GameObject:
   - component: {fileID: 1060169461}
   m_Layer: 0
   m_Name: decors-3_16 (15)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12533,7 +12852,7 @@ GameObject:
   - component: {fileID: 1060764241}
   m_Layer: 0
   m_Name: new_decors_8 (6)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12661,7 +12980,7 @@ GameObject:
   - component: {fileID: 1062552044}
   m_Layer: 0
   m_Name: decors-3_5 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12900,7 +13219,7 @@ GameObject:
   - component: {fileID: 1071780527}
   m_Layer: 0
   m_Name: decors-3_22
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13028,7 +13347,7 @@ GameObject:
   - component: {fileID: 1078192192}
   m_Layer: 0
   m_Name: decors-3_16 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13287,7 +13606,7 @@ GameObject:
   - component: {fileID: 1098805281}
   m_Layer: 0
   m_Name: decors-3_16 (9)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13415,7 +13734,7 @@ GameObject:
   - component: {fileID: 1102709462}
   m_Layer: 0
   m_Name: decors-3_21 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13543,7 +13862,7 @@ GameObject:
   - component: {fileID: 1103375808}
   m_Layer: 0
   m_Name: new_decors_10
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13670,7 +13989,7 @@ GameObject:
   - component: {fileID: 1104420848}
   m_Layer: 0
   m_Name: new_decors_8 (10)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13771,7 +14090,7 @@ GameObject:
   - component: {fileID: 1105995324}
   m_Layer: 0
   m_Name: new_decors_12 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13873,7 +14192,7 @@ GameObject:
   - component: {fileID: 1128255750}
   m_Layer: 0
   m_Name: new_decors_8 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14112,7 +14431,7 @@ GameObject:
   - component: {fileID: 1154227121}
   m_Layer: 0
   m_Name: decors-3_0 (28)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14240,7 +14559,7 @@ GameObject:
   - component: {fileID: 1164113839}
   m_Layer: 0
   m_Name: decors-3_0 (9)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14429,7 +14748,7 @@ GameObject:
   - component: {fileID: 1195901446}
   m_Layer: 0
   m_Name: decors-3_5 (13)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14531,7 +14850,7 @@ GameObject:
   - component: {fileID: 1197370409}
   m_Layer: 0
   m_Name: decors-3_0 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14721,7 +15040,7 @@ GameObject:
   - component: {fileID: 1215613259}
   m_Layer: 0
   m_Name: decors-3_9 (12)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14849,7 +15168,7 @@ GameObject:
   - component: {fileID: 1225087239}
   m_Layer: 0
   m_Name: new_decors_5 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14977,7 +15296,7 @@ GameObject:
   - component: {fileID: 1231249779}
   m_Layer: 0
   m_Name: new_decors_8 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15104,7 +15423,7 @@ GameObject:
   - component: {fileID: 1231332550}
   m_Layer: 0
   m_Name: new_decors_7 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15206,7 +15525,7 @@ GameObject:
   - component: {fileID: 1239996144}
   m_Layer: 0
   m_Name: new_decors_8 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15334,7 +15653,7 @@ GameObject:
   - component: {fileID: 1244715757}
   m_Layer: 0
   m_Name: decors-3_16 (20)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15462,7 +15781,7 @@ GameObject:
   - component: {fileID: 1248974453}
   m_Layer: 0
   m_Name: decors-3_0 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15590,7 +15909,7 @@ GameObject:
   - component: {fileID: 1252327203}
   m_Layer: 0
   m_Name: shaurma_0
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15718,7 +16037,7 @@ GameObject:
   - component: {fileID: 1269389202}
   m_Layer: 0
   m_Name: new_decors_9 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15845,7 +16164,7 @@ GameObject:
   - component: {fileID: 1279089885}
   m_Layer: 0
   m_Name: decors-3_5 (11)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15933,6 +16252,50 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &1286686887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1286686889}
+  - component: {fileID: 1286686888}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1286686888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286686887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1f9b65121fb374ebd45b5b9f2a0660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1286686889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286686887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286711764
 GameObject:
   m_ObjectHideFlags: 0
@@ -15947,7 +16310,7 @@ GameObject:
   - component: {fileID: 1286711768}
   m_Layer: 0
   m_Name: decors-3_16 (19)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16075,7 +16438,7 @@ GameObject:
   - component: {fileID: 1300472316}
   m_Layer: 0
   m_Name: decors-3_21 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16202,7 +16565,7 @@ GameObject:
   - component: {fileID: 1305066368}
   m_Layer: 0
   m_Name: new_decors_14
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16303,7 +16666,7 @@ GameObject:
   - component: {fileID: 1330245052}
   m_Layer: 0
   m_Name: new_decors_7 (6)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16405,7 +16768,7 @@ GameObject:
   - component: {fileID: 1332755194}
   m_Layer: 0
   m_Name: decors-3_16 (8)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16533,7 +16896,7 @@ GameObject:
   - component: {fileID: 1334463327}
   m_Layer: 0
   m_Name: new_decors_9 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16697,7 +17060,7 @@ GameObject:
   - component: {fileID: 1337156248}
   m_Layer: 0
   m_Name: new_decors_12
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16799,7 +17162,7 @@ GameObject:
   - component: {fileID: 1339889884}
   m_Layer: 0
   m_Name: decors-3_0 (29)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16926,7 +17289,7 @@ GameObject:
   - component: {fileID: 1364919747}
   m_Layer: 0
   m_Name: decors-3_5 (4)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17028,7 +17391,7 @@ GameObject:
   - component: {fileID: 1368825873}
   m_Layer: 0
   m_Name: decors-3_11
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17156,7 +17519,7 @@ GameObject:
   - component: {fileID: 1383361677}
   m_Layer: 0
   m_Name: decors-3_0 (21)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17284,7 +17647,7 @@ GameObject:
   - component: {fileID: 1396643462}
   m_Layer: 0
   m_Name: decors-3_0 (14)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17412,7 +17775,7 @@ GameObject:
   - component: {fileID: 1414160806}
   m_Layer: 0
   m_Name: decors-3_2
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17540,7 +17903,7 @@ GameObject:
   - component: {fileID: 1415243686}
   m_Layer: 0
   m_Name: decors-3_0 (18)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17668,7 +18031,7 @@ GameObject:
   - component: {fileID: 1443160064}
   m_Layer: 0
   m_Name: decors-3_4 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30651,7 +31014,7 @@ GameObject:
   - component: {fileID: 1446380511}
   m_Layer: 0
   m_Name: decors-3_0 (15)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30779,7 +31142,7 @@ GameObject:
   - component: {fileID: 1448829874}
   m_Layer: 0
   m_Name: decors-3_22 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30906,7 +31269,7 @@ GameObject:
   - component: {fileID: 1473185708}
   m_Layer: 0
   m_Name: decors-3_5 (12)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31007,7 +31370,7 @@ GameObject:
   - component: {fileID: 1473575384}
   m_Layer: 0
   m_Name: decors-3_9
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31108,7 +31471,7 @@ GameObject:
   - component: {fileID: 1475294604}
   m_Layer: 0
   m_Name: new_decors_7 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31361,7 +31724,7 @@ GameObject:
   - component: {fileID: 1487188395}
   m_Layer: 0
   m_Name: decors-3_0 (25)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31599,7 +31962,7 @@ GameObject:
   - component: {fileID: 1524643108}
   m_Layer: 0
   m_Name: new_decors_7 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31701,7 +32064,7 @@ GameObject:
   - component: {fileID: 1529825781}
   m_Layer: 0
   m_Name: decors-3_21
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31829,7 +32192,7 @@ GameObject:
   - component: {fileID: 1536521401}
   m_Layer: 0
   m_Name: decors-3_1 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31957,7 +32320,7 @@ GameObject:
   - component: {fileID: 1537060746}
   m_Layer: 0
   m_Name: decors-3_21 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32153,7 +32516,7 @@ GameObject:
   - component: {fileID: 1542372416}
   m_Layer: 0
   m_Name: decors-3_3 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32311,7 +32674,7 @@ GameObject:
   - component: {fileID: 1551119036}
   m_Layer: 0
   m_Name: new_decors_7 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32460,7 +32823,7 @@ GameObject:
   - component: {fileID: 1588444933}
   m_Layer: 0
   m_Name: decors-3_16 (12)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32588,7 +32951,7 @@ GameObject:
   - component: {fileID: 1601960110}
   m_Layer: 0
   m_Name: decors-3_9 (13)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32778,7 +33141,7 @@ GameObject:
   - component: {fileID: 1641531964}
   m_Layer: 0
   m_Name: decors-3_0 (20)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32906,7 +33269,7 @@ GameObject:
   - component: {fileID: 1668333624}
   m_Layer: 0
   m_Name: decors-3_21 (14)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33034,7 +33397,7 @@ GameObject:
   - component: {fileID: 1677555768}
   m_Layer: 0
   m_Name: decors-3_0 (26)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33162,7 +33525,7 @@ GameObject:
   - component: {fileID: 1691517919}
   m_Layer: 0
   m_Name: decors-3_16 (21)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33439,7 +33802,7 @@ GameObject:
   - component: {fileID: 1720896080}
   m_Layer: 0
   m_Name: decors-3_22 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33678,7 +34041,7 @@ GameObject:
   - component: {fileID: 1729585848}
   m_Layer: 0
   m_Name: decors-3_21 (12)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33805,7 +34168,7 @@ GameObject:
   - component: {fileID: 1731520433}
   m_Layer: 0
   m_Name: walls_7
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33907,7 +34270,7 @@ GameObject:
   - component: {fileID: 1739155544}
   m_Layer: 0
   m_Name: decors-3_0 (23)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34035,7 +34398,7 @@ GameObject:
   - component: {fileID: 1748654549}
   m_Layer: 0
   m_Name: decors-3_21 (15)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34163,7 +34526,7 @@ GameObject:
   - component: {fileID: 1749354263}
   m_Layer: 0
   m_Name: decors-3_0 (10)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34457,7 +34820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759966935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -5.09, z: 0}
+  m_LocalPosition: {x: -74.96, y: 60.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34479,7 +34842,7 @@ GameObject:
   - component: {fileID: 1773836243}
   m_Layer: 0
   m_Name: shaurma_0 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34607,7 +34970,7 @@ GameObject:
   - component: {fileID: 1791790918}
   m_Layer: 0
   m_Name: decors-3_16 (17)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34765,7 +35128,7 @@ GameObject:
   - component: {fileID: 1853972514}
   m_Layer: 0
   m_Name: decors-3_18
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34867,7 +35230,7 @@ GameObject:
   - component: {fileID: 1854508910}
   m_Layer: 0
   m_Name: decors-3_21 (8)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34995,7 +35358,7 @@ GameObject:
   - component: {fileID: 1859860898}
   m_Layer: 0
   m_Name: decors-3_21 (16)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35123,7 +35486,7 @@ GameObject:
   - component: {fileID: 1865587651}
   m_Layer: 0
   m_Name: decors-3_16
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35251,7 +35614,7 @@ GameObject:
   - component: {fileID: 1869002244}
   m_Layer: 0
   m_Name: new_decors_9 (3)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35378,7 +35741,7 @@ GameObject:
   - component: {fileID: 1894800966}
   m_Layer: 0
   m_Name: new_decors_13
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35479,7 +35842,7 @@ GameObject:
   - component: {fileID: 1903109405}
   m_Layer: 0
   m_Name: decors-3_5 (7)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35581,7 +35944,7 @@ GameObject:
   - component: {fileID: 1904774936}
   m_Layer: 0
   m_Name: decors-3_0 (32)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35788,6 +36151,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 886144909}
+  - {fileID: 670097952}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35810,7 +36174,7 @@ GameObject:
   - component: {fileID: 1921004653}
   m_Layer: 0
   m_Name: new_decors_8 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35938,7 +36302,7 @@ GameObject:
   - component: {fileID: 1922604284}
   m_Layer: 0
   m_Name: decors-3_22 (2)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36065,7 +36429,7 @@ GameObject:
   - component: {fileID: 1943978223}
   m_Layer: 0
   m_Name: decors-3_5 (9)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36167,7 +36531,7 @@ GameObject:
   - component: {fileID: 1956617945}
   m_Layer: 0
   m_Name: decors-3_0 (11)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42714,7 +43078,7 @@ GameObject:
   - component: {fileID: 2013250710}
   m_Layer: 0
   m_Name: new_decors_8 (7)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42841,7 +43205,7 @@ GameObject:
   - component: {fileID: 2026842361}
   m_Layer: 0
   m_Name: decors-3_5 (10)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43195,7 +43559,7 @@ GameObject:
   - component: {fileID: 2080968434}
   m_Layer: 0
   m_Name: decors-3_20
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43408,7 +43772,7 @@ GameObject:
   - component: {fileID: 2105163535}
   m_Layer: 0
   m_Name: new_decors_9 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43536,7 +43900,7 @@ GameObject:
   - component: {fileID: 2107818437}
   m_Layer: 0
   m_Name: new_decors_8 (5)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43663,7 +44027,7 @@ GameObject:
   - component: {fileID: 2122461568}
   m_Layer: 0
   m_Name: decors-3_5 (14)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43765,7 +44129,7 @@ GameObject:
   - component: {fileID: 2123094940}
   m_Layer: 0
   m_Name: decors-3_3
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43893,7 +44257,7 @@ GameObject:
   - component: {fileID: 2141185201}
   m_Layer: 0
   m_Name: decors-3_9 (1)
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

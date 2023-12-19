@@ -7,11 +7,12 @@ public class ControlButton : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("Scene"));
     }
 
     public void playAgain()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadSceneAsync(1);
     }
 }

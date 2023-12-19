@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public float hp;
     private void Start()
     {
-        //PlayerPrefs.SetFloat("PlayerHP", 1000);
+        //PlayerPrefs.DeleteAll();
         if (PlayerPrefs.HasKey("PlayerHP"))
         {
             hp = PlayerPrefs.GetFloat("PlayerHP");
@@ -26,11 +26,11 @@ public class Player : MonoBehaviour
             healthBar.offsetMax = currentOffsetMax;
             healthBar.offsetMin = currentOffsetMin;
         }
-
-        //if (PlayerPrefs.HasKey("PlayerPosX") && PlayerPrefs.HasKey("PlayerPosY"))
-        //{
-        //    transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"), 0f);
-        //}
+        
+        if(PlayerPrefs.HasKey("PlayerPosX") && PlayerPrefs.HasKey("PlayerPosY"))
+        {
+            transform.position = new Vector2(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"));
+        }
     }
     private void Update()
     {
@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
             //PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
             //PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
             //PlayerPrefs.Save();
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadSceneAsync(4);
         }
 
         hp -= damage;
@@ -109,12 +109,12 @@ public class Player : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    //private void OnApplicationQuit()
-    //{
-    //    PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
-    //    PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
-    //    PlayerPrefs.Save();
-    //}
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
+        PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+        PlayerPrefs.Save();
+    }
     private void ShootBullet(Vector3 targetPosition)
     {
         GameObject bullett = Instantiate(bullet, transform.position, Quaternion.identity);
