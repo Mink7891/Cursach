@@ -4,32 +4,20 @@ using UnityEngine;
 
 public class GuardianScript : MonoBehaviour
 {
-
-
-    private DialogTrigger dialog;
-    
-    void Start()
-    {
-        dialog = GetComponent<DialogTrigger>();
-    }
-
-
-
-    //void OnTriggerStay2D(Collider2D other)
-    //{
-    //    if (Input.GetKeyDown(KeyCode.E)) {
-    //        dialog.TriggerDialog();
-    //    }
-    //}
+    public GameObject dialog;
+    public string namePers;
+    public string[] say;
+    public AudioSource[] audioSource;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            dialog.TriggerDialog();
             GetComponent<BoxCollider2D>().enabled = false;
             collision.gameObject.GetComponent<Player>().enabled = false;
+            collision.gameObject.GetComponent<CharacterController>().walkSource.Stop();
             collision.gameObject.GetComponent<CharacterController>().enabled = false;
+            StartCoroutine(dialog.GetComponent<DialogManager>().StartDialog(namePers, say, audioSource));
         }
     }
 }
