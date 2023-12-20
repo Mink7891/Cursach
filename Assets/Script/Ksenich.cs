@@ -7,10 +7,11 @@ public class Ksenich : MonoBehaviour
 {
     private GameObject player;
     public GameObject book;
-    public int hp = 100;
+    public float hp;
     private Animator anim;
     private int countBook = 0;
     private bool canShoot = true;
+    public RectTransform healthBar;
     //private bool isMoving = true;
     public int damage;
     private NavMeshAgent agent;
@@ -23,7 +24,18 @@ public class Ksenich : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
+    public void HaveDamage(int damagePlayer)
+    {
+        hp -= damagePlayer;
+        float hpLos = (float)damagePlayer / hp;
+        Vector2 currentOffsetMax = healthBar.offsetMax;
+        Vector2 currentOffsetMin = healthBar.offsetMin;
 
+        currentOffsetMax.y -= currentOffsetMax.y * hpLos;
+
+        healthBar.offsetMax = currentOffsetMax;
+        healthBar.offsetMin = currentOffsetMin;
+    }
     private void ShootBook(Vector3 targetPosition)
     {
         GameObject books = Instantiate(book, transform.position, Quaternion.identity);

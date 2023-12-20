@@ -6,10 +6,11 @@ using UnityEngine.AI;
 public class Bogush : MonoBehaviour
 {
     private GameObject player;
-    public int hp;
+    public float hp;
     private bool temp = true;
     public int damage;
     private NavMeshAgent agent;
+    public RectTransform healthBar;
     private void Start()
     {
         player = GameObject.Find("Player");
@@ -40,7 +41,19 @@ public class Bogush : MonoBehaviour
             agent.ResetPath();
         }
     }
+    public void HaveDamage(int damage)
+    {
+        hp -= damage;
+        float hpLos = damage / hp;
+        Vector2 currentOffsetMax = healthBar.offsetMax;
+        Vector2 currentOffsetMin = healthBar.offsetMin;
 
+        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+
+
+        healthBar.offsetMax = currentOffsetMax;
+        healthBar.offsetMin = currentOffsetMin;
+    }
     IEnumerator Damage()
     {
         temp = false;

@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public GameObject bullet;
     public RectTransform healthBar;
     public float hp;
+
+    public AudioSource shootSource;
     private void Start()
     {
         //PlayerPrefs.DeleteAll();
@@ -53,6 +55,12 @@ public class Player : MonoBehaviour
         {
             GetComponent<CharacterController>().moveSpeed *= 2;
         }
+        if (collision.gameObject.CompareTag("pointDoor"))
+        {
+            PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
+            PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+            PlayerPrefs.Save();
+        }
     }
     private IEnumerator Boom()
     {
@@ -71,27 +79,13 @@ public class Player : MonoBehaviour
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             worldPosition.z = 0f;
             ShootBullet(worldPosition);
-           
-
         }
-
-        //    if (Input.GetKeyDown(KeyCode.Mouse0))
-        //    {
-        //        Vector3 mousePosition = Input.mousePosition;
-        //        mousePosition.z = 20f;
-
-        //        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        //        worldPosition.z = 0f;
-        //    }
     }
 
     public void HaveDamage(int damage)
     {
         if (hp <= 0)
         {
-            //PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
-            //PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
-            //PlayerPrefs.Save();
             SceneManager.LoadSceneAsync(4);
         }
 
@@ -108,15 +102,17 @@ public class Player : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerHP", hp);
         PlayerPrefs.Save();
     }
-
-    private void OnApplicationQuit()
+    public void LoadGameState()
     {
+
         PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
         PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
         PlayerPrefs.Save();
+
     }
     private void ShootBullet(Vector3 targetPosition)
     {
+        shootSource.Play();
         GameObject bullett = Instantiate(bullet, transform.position, Quaternion.identity);
         Vector2 direction = (targetPosition - bullett.transform.position).normalized;
         bullett.GetComponent<Rigidbody2D>().AddForce(direction * speedShoot);

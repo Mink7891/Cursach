@@ -7,12 +7,23 @@ using UnityEngine;
 public class PointsDoor : MonoBehaviour
 {
     public GameObject doors;
-    private int index; 
+    public GameObject spawnEnemy;
+    private int index;
+    public GameObject boss;
+
     private void Start()
     {
         index = IsTextAllowed(gameObject.name);
+
+        bool pointRemained = PlayerPrefs.GetInt("Point" + index, 1) == 1;
+
+        if (!pointRemained)
+        {
+            Destroy(gameObject);
+        }
     }
 
+  
     private int IsTextAllowed(string text)
     {
 
@@ -20,10 +31,10 @@ public class PointsDoor : MonoBehaviour
 
         return result;
     }
-
+    
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+
         if (collision.gameObject.CompareTag("Player"))
         {
             if (PlayerPrefs.GetInt("Scene") < 3)
@@ -34,14 +45,20 @@ public class PointsDoor : MonoBehaviour
                     {
                         case 1:
                             doors.GetComponent<ControlDoor>().doors[0].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[1].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
 
                         case 2:
                             doors.GetComponent<ControlDoor>().doors[2].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[3].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
 
                         case 4:
                             doors.GetComponent<ControlDoor>().doors[6].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[7].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
                     }
                 }
@@ -50,10 +67,13 @@ public class PointsDoor : MonoBehaviour
                     if (index == 3 && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
                     {
                         doors.GetComponent<ControlDoor>().doors[4].SetActive(true);
+                        doors.GetComponent<ControlDoor>().doors[5].SetActive(true);
+                        spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                     }
                     if (index == 5 && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
                     {
                         doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
+                        boss.SetActive(true);
                     }
                 }
             }
@@ -65,10 +85,14 @@ public class PointsDoor : MonoBehaviour
                     {
                         case 1:
                             doors.GetComponent<ControlDoor>().doors[0].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[1].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
 
                         case 2:
                             doors.GetComponent<ControlDoor>().doors[2].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[3].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
                     }
                 }
@@ -78,14 +102,18 @@ public class PointsDoor : MonoBehaviour
                     {
                         case 3:
                             doors.GetComponent<ControlDoor>().doors[4].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[5].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
 
                         case 6:
                             doors.GetComponent<ControlDoor>().doors[10].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
 
                         case 7:
                             doors.GetComponent<ControlDoor>().doors[11].SetActive(true);
+                            boss.SetActive(true);
                             break;
                     }
                 }
@@ -95,14 +123,21 @@ public class PointsDoor : MonoBehaviour
                     {
                         case 4:
                             doors.GetComponent<ControlDoor>().doors[6].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[7].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
 
                         case 5:
                             doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
+                            doors.GetComponent<ControlDoor>().doors[9].SetActive(true);
+                            spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             break;
                     }
                 }
             }
+            PlayerPrefs.SetInt("Point" + index, 0);
+            PlayerPrefs.Save();
+            Destroy(gameObject);
         }
     }
 }

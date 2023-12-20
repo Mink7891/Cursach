@@ -61,6 +61,7 @@
     <Compile Include="Assets\kbinput.cs" />
     <Compile Include="Assets\Script\Kashkin.cs" />
     <Compile Include="Assets\Script\Book.cs" />
+    <Compile Include="Assets\Script\BackgroundInstantControllerComponent.cs" />
     <Compile Include="Assets\Script\CheckEnemyRooms.cs" />
     <Compile Include="Assets\Script\Pervak.cs" />
     <Compile Include="Assets\Script\PointsDoor.cs" />
@@ -71,7 +72,9 @@
     <Compile Include="Assets\Script\DamageRadius.cs" />
     <Compile Include="Assets\Script\Line.cs" />
     <Compile Include="Assets\Script\Ksenich.cs" />
+    <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\popa\Ksenuch\GuardianScript.cs" />
+    <Compile Include="Assets\Script\SoundVolumControllerComponent.cs" />
     <Compile Include="Assets\popa\Ksenuch\Task.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
@@ -84,8 +87,6 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\Script\SoundVolumControllerComponent.cs" />
-    <Compile Include="Assets\Script\BackgroundInstantControllerComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

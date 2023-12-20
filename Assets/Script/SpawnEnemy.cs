@@ -7,32 +7,21 @@ public class SpawnEnemy : MonoBehaviour
     public Transform[] points;
     public GameObject pervak;
 
-    private void Awake()
+    public void Spawn(int index)
     {
         foreach (Transform point in points)
         {
-            GameObject pervakClone = Instantiate(pervak, point.position, Quaternion.identity);
-
-            if (point.name.Contains("Room1"))
+            if (ShouldSpawn(point, index))
             {
-                pervakClone.name = "Pervak(Clone)2";
-            }
-            else if (point.name.Contains("Room2"))
-            {
-                pervakClone.name = "Pervak(Clone)4";
-            }
-            else if (point.name.Contains("Room3"))
-            {
-                pervakClone.name = "Pervak(Clone)6";
-            }
-            else if (point.name.Contains("Room4"))
-            {
-                pervakClone.name = "Pervak(Clone)8";
-            }
-            else if (point.name.Contains("Room5"))
-            {
-                pervakClone.name = "Pervak(Clone)10";
+                GameObject pervakClone = Instantiate(pervak, point.position, Quaternion.identity);
+                pervakClone.name = $"Pervak(Clone){index * 2}";
             }
         }
+    }
+
+    private bool ShouldSpawn(Transform point, int index)
+    {
+        string roomName = point.name;
+        return roomName.Contains($"Room{index}") && index >= 1 && index <= 5;
     }
 }

@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float moveSpeed = 5f;
     Vector2 movement;
     public Rigidbody2D rb;
     public Animator animator;
+    public AudioSource walkSource;
+    private bool isWalking = false;
 
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -24,10 +20,29 @@ public class CharacterController : MonoBehaviour
         animator.SetFloat("horizontal" , movement.x);
         animator.SetFloat("verical" , movement.y);
         animator.SetFloat("speed" , movement.sqrMagnitude);
+
+        isWalking = movement.magnitude > 0.01f;
+
+        if (!isWalking && walkSource.isPlaying)
+        {
+            walkSource.Stop();
+        }
     }
 
 
     void FixedUpdate() {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        if (isWalking && !walkSource.isPlaying)
+        {
+            StartCoroutine(PlayFootstepSound());
+        }
+    }
+
+    IEnumerator PlayFootstepSound()
+    {
+        walkSource.Play();
+        yield return new WaitForSeconds(walkSource.clip.length);
+        isWalking = false;
     }
 }
