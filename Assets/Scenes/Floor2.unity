@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 39673618}
   m_Layer: 0
   m_Name: Door3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1519,7 +1519,7 @@ GameObject:
   - component: {fileID: 119843247}
   m_Layer: 0
   m_Name: Door9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13910,11 +13910,11 @@ GameObject:
   - component: {fileID: 1063967272}
   m_Layer: 0
   m_Name: Door4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1063967272
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15259,7 +15259,7 @@ GameObject:
   - component: {fileID: 1141652596}
   m_Layer: 0
   m_Name: Door5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33579,11 +33579,11 @@ GameObject:
   - component: {fileID: 1489403639}
   m_Layer: 0
   m_Name: Door2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1489403639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36106,11 +36106,11 @@ GameObject:
   - component: {fileID: 1724354781}
   m_Layer: 0
   m_Name: Door6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1724354781
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45403,7 +45403,7 @@ GameObject:
   - component: {fileID: 2030600260}
   m_Layer: 0
   m_Name: Door7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45514,11 +45514,11 @@ GameObject:
   - component: {fileID: 2038449063}
   m_Layer: 0
   m_Name: Door8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &2038449063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45757,7 +45757,7 @@ GameObject:
   - component: {fileID: 2097954362}
   m_Layer: 0
   m_Name: Door1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -3496,11 +3496,11 @@ GameObject:
   - component: {fileID: 295080642}
   m_Layer: 0
   m_Name: Door10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &295080642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3607,7 +3607,7 @@ GameObject:
   - component: {fileID: 313566505}
   m_Layer: 0
   m_Name: Door1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5990,7 +5990,7 @@ GameObject:
   - component: {fileID: 579024516}
   m_Layer: 0
   m_Name: Door12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23786,7 +23786,7 @@ GameObject:
   - component: {fileID: 882064342}
   m_Layer: 0
   m_Name: Door3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26025,7 +26025,7 @@ GameObject:
   - component: {fileID: 1099232434}
   m_Layer: 0
   m_Name: Door7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28362,7 +28362,7 @@ GameObject:
   - component: {fileID: 1326497887}
   m_Layer: 0
   m_Name: Door5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28830,11 +28830,11 @@ GameObject:
   - component: {fileID: 1389657155}
   m_Layer: 0
   m_Name: Door4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1389657155
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29269,11 +29269,11 @@ GameObject:
   - component: {fileID: 1454996499}
   m_Layer: 0
   m_Name: Door8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1454996499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30061,11 +30061,11 @@ GameObject:
   - component: {fileID: 1533774892}
   m_Layer: 0
   m_Name: Door2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1533774892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31656,11 +31656,11 @@ GameObject:
   - component: {fileID: 1679910619}
   m_Layer: 0
   m_Name: Door6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1679910619
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33305,7 +33305,7 @@ GameObject:
   - component: {fileID: 1922768929}
   m_Layer: 0
   m_Name: Door9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34399,7 +34399,7 @@ GameObject:
   - component: {fileID: 1970030813}
   m_Layer: 0
   m_Name: Door11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

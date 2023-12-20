@@ -13,6 +13,7 @@ public class ControlButton : MonoBehaviour
     public void playAgain()
     {
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetFloat("BG_MUSIC", GameObject.FindWithTag("BG_MUSIC_CREATED").GetComponent<AudioSource>().volume);
         SceneManager.LoadSceneAsync(1);
     }
 }

@@ -80,6 +80,7 @@
     <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
     <Compile Include="Assets\Script\SaveManager.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventTrigger.cs" />
+    <Compile Include="Assets\Script\Options.cs" />
     <Compile Include="Assets\Script\Ladder.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogTrigger.cs" />
     <Compile Include="Assets\popa\Ksenuch\Dialog.cs" />
