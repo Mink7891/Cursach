@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public float hp;
 
     public AudioSource shootSource;
+    public AudioSource waterSource;
     private void Start()
     {
         //PlayerPrefs.DeleteAll();
@@ -46,14 +47,18 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Puddle"))
         {
-            GetComponent<CharacterController>().moveSpeed /= 2;
+            GetComponent<CharacterController>().moveSpeed /= 3;
+            waterSource.Play();
+            CharacterController.isWater = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Puddle"))
         {
-            GetComponent<CharacterController>().moveSpeed *= 2;
+            CharacterController.isWater = false;
+            waterSource.Stop();
+            GetComponent<CharacterController>().moveSpeed *= 3;
         }
         if (collision.gameObject.CompareTag("pointDoor"))
         {

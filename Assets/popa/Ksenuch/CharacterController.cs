@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviour
     public Animator animator;
     public AudioSource walkSource;
     private bool isWalking = false;
+    public static bool isWater = false;
 
 
     void Update()
@@ -27,13 +28,17 @@ public class CharacterController : MonoBehaviour
         {
             walkSource.Stop();
         }
+        else if (isWater)
+        {
+            walkSource.Stop();
+        }
     }
 
 
     void FixedUpdate() {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-        if (isWalking && !walkSource.isPlaying)
+        if (isWalking && !walkSource.isPlaying && !isWater)
         {
             StartCoroutine(PlayFootstepSound());
         }
