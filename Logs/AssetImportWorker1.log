@@ -1,0 +1,298 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Enterprise' Language: 'ru' Physical Memory: 16236 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/user/Desktop/github/Cursach
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+61779
+Successfully changed project path to: C:/Users/user/Desktop/github/Cursach
+C:/Users/user/Desktop/github/Cursach
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 89.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/github/Cursach/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x24dd)
+    Vendor:   NVIDIA
+    VRAM:     8044 MB
+    Driver:   30.0.15.1236
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007900 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 80.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.562 seconds
+Domain Reload Profiling:
+	ReloadAssembly (562ms)
+		BeginReloadAssembly (58ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (410ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (84ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (259ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (49ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006776 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\github\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\github\Cursach\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 84.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.152 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1153ms)
+		BeginReloadAssembly (206ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (125ms)
+		EndReloadAssembly (849ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (209ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (451ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (56.1 KB). Loaded Objects now: 4614.
+Memory consumption went from 155.5 MB to 155.5 MB.
+Total: 3.766300 ms (FindLiveObjects: 0.357100 ms CreateObjectMapping: 0.138600 ms MarkObjects: 3.184500 ms  DeleteObjects: 0.085400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1499.380138 seconds.
+  path: Assets/popa/Kaskin/idle Kashkin.png
+  artifactKey: Guid(7a42f15644078744f8290b95a018f962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Kaskin/idle Kashkin.png using Guid(7a42f15644078744f8290b95a018f962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0314815e894ce168075bc81f033177e') in 0.142012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/popa/Kaskin/up walk Kashkin (1).png
+  artifactKey: Guid(83906f453dbef6945a44fb40c0afa2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Kaskin/up walk Kashkin (1).png using Guid(83906f453dbef6945a44fb40c0afa2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002763348381370262e03fbbfa49732e') in 0.028077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.925766 seconds.
+  path: Assets/popa/Ksenuch/better-vcr-5.2.ttf
+  artifactKey: Guid(969c7e92aff9e5e44981cf8dc78c2c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/better-vcr-5.2.ttf using Guid(969c7e92aff9e5e44981cf8dc78c2c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55053b810e98ca6837bc9b722ff72790') in 0.058705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/popa/Ksenuch/left down Ksenich.png
+  artifactKey: Guid(db32c9bb36da60e40aebabe70da3f0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/left down Ksenich.png using Guid(db32c9bb36da60e40aebabe70da3f0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094d3b1d2fe4d57818fcf9047071593e') in 0.022002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/popa/Ksenuch/idle Ksenich.png
+  artifactKey: Guid(78454ec665cf999478db4b6179d3c55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/idle Ksenich.png using Guid(78454ec665cf999478db4b6179d3c55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e80fe811fbdd7d47626434ec7b87e0') in 0.032866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/popa/Ksenuch/down walk Bogush.png
+  artifactKey: Guid(3c30cc6e4eabffd44b28d5bcc245c582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/down walk Bogush.png using Guid(3c30cc6e4eabffd44b28d5bcc245c582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b556af45fadfba5cd73e3df8fdfacd24') in 0.037559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/popa/Ksenuch/kb_tilemap_1.asset
+  artifactKey: Guid(9cbbc12fdedbad04599162de5526b491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/Ksenuch/kb_tilemap_1.asset using Guid(9cbbc12fdedbad04599162de5526b491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d608645cfcaf51bfee10658ce0848c9') in 0.018830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.971951 seconds.
+  path: Assets/popa/MainCharacter/left walk MainCharacter.png
+  artifactKey: Guid(ee07640c54260234faca11d0b0a1b1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/MainCharacter/left walk MainCharacter.png using Guid(ee07640c54260234faca11d0b0a1b1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be64acd2b62d6d676bd051429e3f35c8') in 0.030731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/popa/MainCharacter/right walk MainCharacter.png
+  artifactKey: Guid(9eeddb524c2e41d4b92215ecc2c27a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/popa/MainCharacter/right walk MainCharacter.png using Guid(9eeddb524c2e41d4b92215ecc2c27a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761218cb3476f4e96c770cf266852aba') in 0.031459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.790043 seconds.
+  path: Assets/Sprite/book.png
+  artifactKey: Guid(527f87c8e0d2da6409ebfba0df96e5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/book.png using Guid(527f87c8e0d2da6409ebfba0df96e5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d59cda36dc92732ff358ced90ec877') in 0.040764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprite/pngegg.png
+  artifactKey: Guid(6c6b0de064f63954e88ba63f8b253e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/pngegg.png using Guid(6c6b0de064f63954e88ba63f8b253e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a363cfc35dbbf734096fc2cd46e0f3') in 0.063951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprite/idle_Ksenich.png
+  artifactKey: Guid(6360153b04126bd4482c31cd17d55041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/idle_Ksenich.png using Guid(6360153b04126bd4482c31cd17d55041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c30e41b9b5b18c62df0795351a4b01') in 0.040100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprite/shaurma.png
+  artifactKey: Guid(34b0359f33363f74795339a37a1478ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/shaurma.png using Guid(34b0359f33363f74795339a37a1478ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e52faa3e709ec92e509cae03aca40b') in 0.029163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprite/exit.png
+  artifactKey: Guid(7ed5345a08d2cac4d803b8a37496a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/exit.png using Guid(7ed5345a08d2cac4d803b8a37496a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6162b5360863715aa708e76b9d9585') in 0.052875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprite/down walk Ksenich.png
+  artifactKey: Guid(72cb63c39007e834b8b22a5f4bec4514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/down walk Ksenich.png using Guid(72cb63c39007e834b8b22a5f4bec4514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6515d352e3f67ec8b29f5aa100cd4793') in 0.056398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprite/Up walk Ksenich.png
+  artifactKey: Guid(01270b3915adaae4d83130f6d3f5330a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Up walk Ksenich.png using Guid(01270b3915adaae4d83130f6d3f5330a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76a087172406243bb216d6594110073') in 0.043615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprite/pngegg 1.png
+  artifactKey: Guid(b7201a17cd6e7d343aa9e658ecdb4b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/pngegg 1.png using Guid(b7201a17cd6e7d343aa9e658ecdb4b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da74f3776163abce353bc8e64487f99') in 0.088753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.513832 seconds.
+  path: Assets/Prefabs/Book2.prefab
+  artifactKey: Guid(e5ea674707315de448485b8b17dba281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Book2.prefab using Guid(e5ea674707315de448485b8b17dba281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1373299c0527ec7ff257f5385fbb9be') in 0.037669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(8def21476952f944084952621ad4672a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(8def21476952f944084952621ad4672a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c48ca47da8dfcb46abb4e0b13e829ed') in 0.029011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.313596 seconds.
+  path: Assets/Music/myichanie-monstra-30405_skAqdVHG.wav
+  artifactKey: Guid(12831d46ed7ca47429444d210af59edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/myichanie-monstra-30405_skAqdVHG.wav using Guid(12831d46ed7ca47429444d210af59edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17101b3165f3f3b6263bf1c125e5de39') in 0.049415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Music/p_26308663_629.wav
+  artifactKey: Guid(2251e7f5f93afe74eab684b90846be9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/p_26308663_629.wav using Guid(2251e7f5f93afe74eab684b90846be9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeef33334cfe7221daee50b6ad8555e4') in 0.018378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Music/sound2.wav
+  artifactKey: Guid(8ef91883c1679ac409717be585d66b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/sound2.wav using Guid(8ef91883c1679ac409717be585d66b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5271456430610440d899d7f2273135b2') in 0.022806 seconds 
