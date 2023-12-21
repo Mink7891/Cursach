@@ -10,11 +10,12 @@ public class Player : MonoBehaviour
     public RectTransform healthBar;
     public float hp;
 
+    public GameObject LoadScreen;
+
     public AudioSource shootSource;
     public AudioSource waterSource;
     private void Start()
     {
-        //PlayerPrefs.DeleteAll();
         if (PlayerPrefs.HasKey("PlayerHP"))
         {
             hp = PlayerPrefs.GetFloat("PlayerHP");
@@ -91,7 +92,7 @@ public class Player : MonoBehaviour
     {
         if (hp <= 0)
         {
-            SceneManager.LoadSceneAsync(4);
+            LoadScreen.GetComponent<LoadScreen>().Loading(4);
         }
 
         hp -= damage;

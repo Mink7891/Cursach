@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseGameMenu;
     public TMP_Text text;
     public GameObject player;
+    public GameObject LoadScreen;
 
     public void Continue()
     {
@@ -28,7 +29,7 @@ public class PauseMenu : MonoBehaviour
     public void LosdMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        LoadScreen.GetComponent<LoadScreen>().Loading(0);
     }
 
     bool HasObjectWithSubstring(string substring)

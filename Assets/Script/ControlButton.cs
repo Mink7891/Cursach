@@ -5,15 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class ControlButton : MonoBehaviour
 {
+    public GameObject LoadScreen;
     public void Play()
     {
-        SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("Scene"));
+        LoadScreen.GetComponent<LoadScreen>().Loading(PlayerPrefs.GetInt("Scene"));
+        //SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("Scene"));
     }
 
     public void playAgain()
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetFloat("BG_MUSIC", GameObject.FindWithTag("BG_MUSIC_CREATED").GetComponent<AudioSource>().volume);
-        SceneManager.LoadSceneAsync(1);
+        LoadScreen.GetComponent<LoadScreen>().Loading(1);
+        //SceneManager.LoadSceneAsync(1);
+    }
+
+    public void Training()
+    {
+        LoadScreen.GetComponent<LoadScreen>().Loading(5);
+    }
+
+    public void Exit()
+    {
+#if UNITY_STANDALONE
+        Application.Quit();
+#endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
