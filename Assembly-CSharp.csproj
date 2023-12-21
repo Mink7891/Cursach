@@ -58,6 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\Script\WalkEnemy.cs" />
     <Compile Include="Assets\Script\Bogush.cs" />
+    <Compile Include="Assets\Script\WalkAnimPervak.cs" />
+    <Compile Include="Assets\Script\SpawnRunPervak.cs" />
+    <Compile Include="Assets\Script\PervakFloor3.cs" />
     <Compile Include="Assets\Script\TrainingCharacterController.cs" />
     <Compile Include="Assets\kbinput.cs" />
     <Compile Include="Assets\Script\Kashkin.cs" />
@@ -83,6 +86,7 @@
     <Compile Include="Assets\Script\TrainPauseMenu.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
+    <Compile Include="Assets\Script\Turniket.cs" />
     <Compile Include="Assets\Script\SaveManager.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventTrigger.cs" />
     <Compile Include="Assets\Script\Options.cs" />
@@ -95,7 +99,6 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\Script\Turniket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

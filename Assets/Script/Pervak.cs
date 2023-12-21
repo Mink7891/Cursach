@@ -24,11 +24,11 @@ public class Pervak : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")){ isStop = false; anim.SetTrigger("bite"); runSource.Stop(); attackSource.Play(); }
+        if (collision.gameObject.CompareTag("Player")){ isStop = false; runSource.Stop(); attackSource.Play(); }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) { isStop = true; anim.SetTrigger("idle"); runSource.Play(); attackSource.Stop(); }
+        if (collision.gameObject.CompareTag("Player")) { isStop = true; runSource.Play(); attackSource.Stop(); }
     }
 
     bool IsWallBetween(Vector3 start, Vector3 end)
@@ -43,10 +43,12 @@ public class Pervak : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) <= 10f && !IsWallBetween(transform.position, player.transform.position) && isStop)
         {
             agent.SetDestination(player.transform.position);
+            GetComponent<WalkAnimPervak>().AnimWalk(player.transform, anim);
         }
         else
         {
             agent.ResetPath();
+            anim.SetTrigger("bite");
         }
     }
 

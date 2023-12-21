@@ -10,6 +10,8 @@ public class PointsDoor : MonoBehaviour
     public GameObject spawnEnemy;
     private int index;
     public GameObject boss;
+    public static bool createTemp = false;
+    public static bool destr = false;
 
     private void Start()
     {
@@ -109,10 +111,14 @@ public class PointsDoor : MonoBehaviour
                         case 6:
                             doors.GetComponent<ControlDoor>().doors[10].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            GameObject.Find("Player").GetComponent<Player>().enabled = false;
+                            createTemp = true;
                             break;
 
                         case 7:
                             doors.GetComponent<ControlDoor>().doors[11].SetActive(true);
+                            GameObject.Find("Player").GetComponent<Player>().enabled = true;
+                            destr = true;                            
                             boss.SetActive(true);
                             break;
                     }
