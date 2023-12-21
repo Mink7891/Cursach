@@ -9,7 +9,6 @@ public class ControlButton : MonoBehaviour
     public void Play()
     {
         LoadScreen.GetComponent<LoadScreen>().Loading(PlayerPrefs.GetInt("Scene"));
-        //SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("Scene"));
     }
 
     public void playAgain()
@@ -17,7 +16,6 @@ public class ControlButton : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetFloat("BG_MUSIC", GameObject.FindWithTag("BG_MUSIC_CREATED").GetComponent<AudioSource>().volume);
         LoadScreen.GetComponent<LoadScreen>().Loading(1);
-        //SceneManager.LoadSceneAsync(1);
     }
 
     public void Training()

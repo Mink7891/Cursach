@@ -19,7 +19,10 @@ public class Player : MonoBehaviour
         if (PlayerPrefs.HasKey("PlayerHP"))
         {
             hp = PlayerPrefs.GetFloat("PlayerHP");
-
+            if (hp <= 0)
+            {
+                LoadScreen.GetComponent<LoadScreen>().Loading(4);
+            }
             float damage = 1000f - hp;
             float hpLos = damage / hp;
             Vector2 currentOffsetMax = healthBar.offsetMax;
@@ -92,7 +95,7 @@ public class Player : MonoBehaviour
     {
         if (hp <= 0)
         {
-            LoadScreen.GetComponent<LoadScreen>().Loading(4);
+            SceneManager.LoadScene("GameOver");
         }
 
         hp -= damage;

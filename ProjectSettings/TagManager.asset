@@ -16,6 +16,8 @@ TagManager:
   - BG_MUSIC_VOLUME_TEXT
   - BG_MUSIC_CREATED
   - pointDoor
+  - turniket
+  - bullet
   layers:
   - Default
   - TransparentFX

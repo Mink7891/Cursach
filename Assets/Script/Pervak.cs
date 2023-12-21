@@ -11,22 +11,24 @@ public class Pervak : MonoBehaviour
     public int damage;
     public int hp;
     private NavMeshAgent agent;
+    public AudioSource runSource;
+    public AudioSource attackSource;
     private void Start()
     {
         anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
-
+        runSource.Play();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")){ isStop = false; anim.SetTrigger("bite"); }
+        if (collision.gameObject.CompareTag("Player")){ isStop = false; anim.SetTrigger("bite"); runSource.Stop(); attackSource.Play(); }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) { isStop = true; anim.SetTrigger("idle"); }
+        if (collision.gameObject.CompareTag("Player")) { isStop = true; anim.SetTrigger("idle"); runSource.Play(); attackSource.Stop(); }
     }
 
     bool IsWallBetween(Vector3 start, Vector3 end)

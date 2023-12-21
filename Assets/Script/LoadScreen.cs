@@ -21,7 +21,7 @@ public class LoadScreen : MonoBehaviour
     {
         AsyncOperation loadAsync = SceneManager.LoadSceneAsync(index);
         loadAsync.allowSceneActivation = false;
-
+        
         while (!loadAsync.isDone)
         {
             slider.value = loadAsync.progress;
