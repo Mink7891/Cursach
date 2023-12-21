@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\WalkEnemy.cs" />
     <Compile Include="Assets\Script\Bogush.cs" />
+    <Compile Include="Assets\Scenes\House\Assets\ZatuhScreen.cs" />
     <Compile Include="Assets\Script\WalkAnimPervak.cs" />
     <Compile Include="Assets\Script\SpawnRunPervak.cs" />
     <Compile Include="Assets\Script\PervakFloor3.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\popa\Ksenuch\DialogTrigger.cs" />
     <Compile Include="Assets\Script\BiteTrain.cs" />
     <Compile Include="Assets\popa\Ksenuch\Dialog.cs" />
+    <Compile Include="Assets\Script\SceneChanger.cs" />
     <Compile Include="Assets\Script\ControlDoor.cs" />
     <Compile Include="Assets\Script\TrainPervak.cs" />
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
