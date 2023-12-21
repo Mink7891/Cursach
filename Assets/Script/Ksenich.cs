@@ -12,7 +12,6 @@ public class Ksenich : MonoBehaviour
     private int countBook = 0;
     private bool canShoot = true;
     public RectTransform healthBar;
-    //private bool isMoving = true;
     public int damage;
     private NavMeshAgent agent;
     private void Start()
@@ -40,7 +39,7 @@ public class Ksenich : MonoBehaviour
     {
         GameObject books = Instantiate(book, transform.position, Quaternion.identity);
         Vector2 direction = (targetPosition - books.transform.position).normalized;
-        books.GetComponent<Rigidbody2D>().AddForce(direction * 700f);
+        books.GetComponent<Rigidbody2D>().AddForce(direction * 500f);
     }
 
     void Update()
@@ -50,9 +49,10 @@ public class Ksenich : MonoBehaviour
             GetComponent<WalkEnemy>().AnimWalk(player.transform, anim);
             Attack();
             agent.SetDestination(player.transform.position);
+            
         }
         else
-        {
+        { 
             anim.SetTrigger("idle");
             agent.ResetPath();
             if (Vector3.Distance(transform.position, player.transform.position) <= 5)

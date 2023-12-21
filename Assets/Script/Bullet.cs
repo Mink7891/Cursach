@@ -73,7 +73,7 @@ public class Bullet : MonoBehaviour
             }
             else if (collision.gameObject.CompareTag("Kashkin"))
             {
-                collision.gameObject.GetComponent<Kashkin>().hp -= 20;
+                collision.gameObject.GetComponent<Kashkin>().HaveDamage(20);
                 if (collision.gameObject.GetComponent<Kashkin>().hp <= 0)
                 {
                     Destroy(collision.gameObject);

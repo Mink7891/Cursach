@@ -45,10 +45,6 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Book"))
-        {
-            StartCoroutine(Boom());
-        }
         if (collision.gameObject.CompareTag("Puddle"))
         {
             GetComponent<CharacterController>().moveSpeed /= 3;

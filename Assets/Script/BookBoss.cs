@@ -6,6 +6,7 @@ public class BookBoss : MonoBehaviour
 {
     private GameObject kashkin;
     private int damage;
+    public GameObject boom;
     private void Start()
     {
         kashkin = GameObject.Find("Kashkin");
@@ -13,42 +14,29 @@ public class BookBoss : MonoBehaviour
     }
     private void Update()
     {
-        if (transform.position.x > 35f || transform.position.x < -35f || transform.position.y > 35f || transform.position.x < -35f)
-        {
-            DestroyBullet();
-        }
         GetComponent<Rigidbody2D>().MoveRotation(GetComponent<Rigidbody2D>().rotation + 1250 * Time.fixedDeltaTime);
     }
 
-    private void DestroyBullet()
-    {
-        Destroy(gameObject);
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            DestroyBullet();
+            if (Kashkin.countBook < 3)
+            {
+                collision.gameObject.GetComponent<Player>().HaveDamage(damage);
+                Destroy(gameObject);
+            }
+            else
+            {
+                collision.gameObject.GetComponent<Player>().HaveDamage(damage * 2);
+                Instantiate(boom, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+                Destroy(gameObject);
+            }
 
-            //float hpLos = damage / collision.gameObject.GetComponent<Player>().hp;
-            //collision.gameObject.GetComponent<Player>().hp -= damage;
-            //Vector2 currentOffsetMax = collision.gameObject.GetComponent<Player>().healthBar.offsetMax;
-            //Vector2 currentOffsetMin = collision.gameObject.GetComponent<Player>().healthBar.offsetMin;
-
-            //currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
-
-            //collision.gameObject.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
-            //collision.gameObject.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
-
-
-            //if (collision.gameObject.GetComponent<Player>().hp <= 0)
-            //{
-            //    Destroy(collision.gameObject);
-            //}
         }
-        else if (collision.gameObject.CompareTag("Wall"))
+        else if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Decor"))
         {
-            DestroyBullet();
+            Destroy(gameObject);
         }
     }
 }

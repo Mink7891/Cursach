@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class WalkEnemy : MonoBehaviour
 {
+    public static bool temp = true;
     public void AnimWalk(Transform point, Animator anim)
     {
         float horizontalDifference = transform.position.x - point.position.x;
         float verticalDifference = transform.position.y - point.position.y;
-        if (anim)
+        if (anim && temp)
         {
             if (Mathf.Abs(horizontalDifference) > Mathf.Abs(verticalDifference))
             {

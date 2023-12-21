@@ -48,7 +48,11 @@ public class Pervak : MonoBehaviour
         else
         {
             agent.ResetPath();
-            anim.SetTrigger("bite");
+            if (!isStop)
+            {
+                anim.SetTrigger("bite");
+            }
+            
         }
     }
 
