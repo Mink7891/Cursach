@@ -10,14 +10,19 @@ public class Player : MonoBehaviour
     public RectTransform healthBar;
     public float hp;
 
+    public GameObject LoadScreen;
+
     public AudioSource shootSource;
+    public AudioSource waterSource;
     private void Start()
     {
-        //PlayerPrefs.DeleteAll();
         if (PlayerPrefs.HasKey("PlayerHP"))
         {
             hp = PlayerPrefs.GetFloat("PlayerHP");
-
+            if (hp <= 0)
+            {
+                LoadScreen.GetComponent<LoadScreen>().Loading(4);
+            }
             float damage = 1000f - hp;
             float hpLos = damage / hp;
             Vector2 currentOffsetMax = healthBar.offsetMax;
@@ -46,14 +51,18 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Puddle"))
         {
-            GetComponent<CharacterController>().moveSpeed /= 2;
+            GetComponent<CharacterController>().moveSpeed /= 3;
+            waterSource.Play();
+            CharacterController.isWater = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Puddle"))
         {
-            GetComponent<CharacterController>().moveSpeed *= 2;
+            CharacterController.isWater = false;
+            waterSource.Stop();
+            GetComponent<CharacterController>().moveSpeed *= 3;
         }
         if (collision.gameObject.CompareTag("pointDoor"))
         {
@@ -86,7 +95,7 @@ public class Player : MonoBehaviour
     {
         if (hp <= 0)
         {
-            SceneManager.LoadSceneAsync(4);
+            SceneManager.LoadScene("GameOver");
         }
 
         hp -= damage;

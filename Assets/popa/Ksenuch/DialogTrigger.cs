@@ -15,11 +15,11 @@ public class DialogTrigger : MonoBehaviour
     }
 
 
-    public void TriggerDialog()
-    {
-        FindObjectOfType<DialogManager>().StartDialog(dialog);
+    //public void TriggerDialog()
+    //{
+    //    FindObjectOfType<DialogManager>().StartDialog(dialog);
        
-    }
+    //}
 
 
 

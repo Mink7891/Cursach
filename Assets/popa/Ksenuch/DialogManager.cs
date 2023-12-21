@@ -5,71 +5,29 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
-    public TextMeshProUGUI dialogText;
-    public TextMeshProUGUI nameText;
-    private Queue<string> sentences;
+    public TMP_Text dialogText;
+    public TMP_Text nameText;
     public GameObject dialogWindow;
     private GameObject player;
 
-
-    void Start()
+    private void Start()
     {
-        sentences = new Queue<string>();
         player = GameObject.Find("Player");
     }
-
-    public void StartDialog(Dialog dialog)
+    public IEnumerator StartDialog(string namePerson, string[] say, AudioSource[] audioSource)
     {
         dialogWindow.SetActive(true);
-        nameText.text = dialog.name;
-        sentences.Clear();
-
-        foreach(string sentence in dialog.sentences)
+        nameText.text = namePerson;
+        int i = 0;
+        while (i != say.Length)
         {
-            sentences.Enqueue(sentence);
+            dialogText.text = say[i];
+            audioSource[i].Play();
+            yield return new WaitForSeconds(audioSource[i].clip.length);
+            i++;
         }
-        DisplayNextSentence();
-
-
-    }
-
-
-    public void DisplayNextSentence()
-    {
-        if (sentences.Count ==0 )
-        {
-            EndDialog();
-            return;
-        }
-
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-
-    }
-
-    IEnumerator TypeSentence(string sentence)
-    {
-        dialogText.text = "";
-        foreach(char letter in sentence.ToCharArray())
-        {
-            dialogText.text += letter;
-            yield return null;
-        }
-    }
-
-
-    public void EndDialog()
-    {
         dialogWindow.SetActive(false);
         player.GetComponent<Player>().enabled = true;
         player.GetComponent<CharacterController>().enabled = true;
-    }
-
-    public void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            DisplayNextSentence();
-        }
     }
 }

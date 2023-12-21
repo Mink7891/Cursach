@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
-
+    private GameObject player;
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+    }
     private void ClearPointData()
     {
         for (int i = 1; i < 6; i++)
@@ -24,54 +28,70 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ksenich"))
+        if (SceneManager.GetActiveScene().buildIndex == 5)
         {
-            collision.gameObject.GetComponent<Ksenich>().HaveDamage(25);
-            if (collision.gameObject.GetComponent<Ksenich>().hp <= 0)
+            if (collision.gameObject.CompareTag("Pervak"))
             {
-                Destroy(collision.gameObject);
-                PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
-                PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
-                PlayerPrefs.Save();
-                ClearPointData();
-                SceneManager.LoadSceneAsync(3);
+                collision.gameObject.GetComponent<TrainPervak>().hp -= 25;
+                if (collision.gameObject.GetComponent<TrainPervak>().hp <= 0)
+                {
+                    Destroy(collision.gameObject);
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Bogush"))
+        else
         {
-            collision.gameObject.GetComponent<Bogush>().HaveDamage(25);
-            if (collision.gameObject.GetComponent<Bogush>().hp <= 0)
+            if (collision.gameObject.CompareTag("Ksenich"))
             {
-                Destroy(collision.gameObject);
+                collision.gameObject.GetComponent<Ksenich>().HaveDamage(25);
+                if (collision.gameObject.GetComponent<Ksenich>().hp <= 0)
+                {
+                    Destroy(collision.gameObject);
+                    PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
+                    PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
+                    PlayerPrefs.Save();
+                    ClearPointData();
+                    player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
+                }
+                Destroy(gameObject);
+            }
+            else if (collision.gameObject.CompareTag("Bogush"))
+            {
+                collision.gameObject.GetComponent<Bogush>().HaveDamage(25);
+                if (collision.gameObject.GetComponent<Bogush>().hp <= 0)
+                {
+                    Destroy(collision.gameObject);
 
-                PlayerPrefs.SetFloat("PlayerPosX", 1f);
-                PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
-                PlayerPrefs.Save();
-                ClearPointData();
-                SceneManager.LoadSceneAsync(2);
+                    PlayerPrefs.SetFloat("PlayerPosX", 1f);
+                    PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
+                    PlayerPrefs.Save();
+                    ClearPointData();
+                    player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(2);
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
-        }
-        else if (collision.gameObject.CompareTag("Kashkin"))
-        {
-            collision.gameObject.GetComponent<Kashkin>().hp -= 20;
-            if (collision.gameObject.GetComponent<Kashkin>().hp <= 0)
+            else if (collision.gameObject.CompareTag("Kashkin"))
             {
-                Destroy(collision.gameObject);
+                collision.gameObject.GetComponent<Kashkin>().hp -= 20;
+                if (collision.gameObject.GetComponent<Kashkin>().hp <= 0)
+                {
+                    Destroy(collision.gameObject);
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
-        }
-        else if (collision.gameObject.CompareTag("Pervak"))
-        {
-            collision.gameObject.GetComponent<Pervak>().hp -= 25;
-            if (collision.gameObject.GetComponent<Pervak>().hp <= 0)
+            else if (collision.gameObject.CompareTag("Pervak"))
             {
-                Destroy(collision.gameObject);
+                collision.gameObject.GetComponent<Pervak>().hp -= 25;
+                if (collision.gameObject.GetComponent<Pervak>().hp <= 0)
+                {
+                    Destroy(collision.gameObject);
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Decor"))
+
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Decor"))
         {
             Destroy(gameObject);
         }
