@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
             Vector2 currentOffsetMax = healthBar.offsetMax;
             Vector2 currentOffsetMin = healthBar.offsetMin;
 
-            currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+            currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos + 2;
 
             healthBar.offsetMax = currentOffsetMax;
             healthBar.offsetMin = currentOffsetMin;
@@ -98,12 +98,6 @@ public class Player : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-    private IEnumerator Boom()
-    {
-        transform.GetChild(0).gameObject.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        transform.GetChild(0).gameObject.SetActive(false);
-    }
     private void HandleShootingInput()
     {
 
@@ -130,7 +124,7 @@ public class Player : MonoBehaviour
         Vector2 currentOffsetMax = healthBar.offsetMax;
         Vector2 currentOffsetMin = healthBar.offsetMin;
 
-        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos + 2;
 
         healthBar.offsetMax = currentOffsetMax;
         healthBar.offsetMin = currentOffsetMin;
