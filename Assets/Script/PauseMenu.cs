@@ -49,7 +49,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !HasObjectWithSubstring("Pervak(Clone)"))
+        if (Input.GetKeyDown(KeyCode.Escape) && !HasObjectWithSubstring("Door"))
         {
             player.GetComponent<Player>().enabled = false;
             if (PauseGame)
@@ -61,11 +61,11 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
-        if (HasObjectWithSubstring("Pervak(Clone)"))
+        if (HasObjectWithSubstring("Door"))
         {
             text.text = "Пауза не работет из-за битвы";
         }
-        if (!HasObjectWithSubstring("Pervak(Clone)"))
+        if (!HasObjectWithSubstring("Door"))
         {
             text.text = "";
         }

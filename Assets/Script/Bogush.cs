@@ -12,6 +12,7 @@ public class Bogush : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
     public RectTransform healthBar;
+    public AudioSource walkSource;
     private void Start()
     {
         player = GameObject.Find("Player");
@@ -34,9 +35,11 @@ public class Bogush : MonoBehaviour
         {
             transform.GetChild(0).gameObject.SetActive(false);
             agent.SetDestination(player.transform.position);
+            walkSource.enabled = true;
         }
         else if (Vector3.Distance(transform.position, player.transform.position) <= 5)
         {
+            walkSource.enabled = false;
             GameObject lineObject = transform.GetChild(0).gameObject;
 
             if (lineObject)

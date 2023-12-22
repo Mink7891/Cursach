@@ -86,6 +86,7 @@
     <Compile Include="Assets\popa\Ksenuch\Task.cs" />
     <Compile Include="Assets\Script\TrainPauseMenu.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\DeleteBoom.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
     <Compile Include="Assets\Script\Turniket.cs" />
     <Compile Include="Assets\Script\SaveManager.cs" />
