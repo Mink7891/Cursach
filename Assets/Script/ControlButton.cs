@@ -6,6 +6,18 @@ using UnityEngine.SceneManagement;
 public class ControlButton : MonoBehaviour
 {
     public GameObject LoadScreen;
+    public GameObject play;
+    private void Awake()
+    {
+        if (PlayerPrefs.HasKey("Scene"))
+        {
+            play.SetActive(true);
+        }
+        else
+        {
+            play.SetActive(false);
+        }
+    }
     public void Play()
     {
         LoadScreen.GetComponent<LoadScreen>().Loading(PlayerPrefs.GetInt("Scene"));

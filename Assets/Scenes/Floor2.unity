@@ -4203,7 +4203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341731422}
   m_Layer: 0
-  m_Name: PointsDoor
+  m_Name: PointsDor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14477,7 +14477,7 @@ GameObject:
   - component: {fileID: 1084447161}
   - component: {fileID: 1084447160}
   m_Layer: 0
-  m_Name: Doors
+  m_Name: Dors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35004,7 +35004,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1057856669, guid: 12dd26995b59c9b44b0a671f4ac3aeb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
