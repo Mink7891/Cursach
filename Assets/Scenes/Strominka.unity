@@ -15712,8 +15712,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
-<<<<<<< HEAD
-=======
 --- !u!1 &688004210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1486003858612414780, guid: 8030c343bc67fa5498c19743c4362d1d, type: 3}
@@ -15950,7 +15948,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705592654}
   m_CullTransparentMesh: 1
->>>>>>> 163327695a5b7df8f5d03d76a7fe405256119ed8
 --- !u!1 &714884759
 GameObject:
   m_ObjectHideFlags: 0
