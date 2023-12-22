@@ -8,8 +8,8 @@ public class DamageRadius : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(Damage(collision.gameObject, 2f));
-            //collision.gameObject.GetComponent<Player>().speed = 5f;
+            StartCoroutine(Damage(collision.gameObject, 3f));
+            collision.gameObject.GetComponent<CharacterController>().moveSpeed /= 1.5f;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -17,7 +17,7 @@ public class DamageRadius : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             StopCoroutine(nameof(Damage));
-            //collision.gameObject.GetComponent<Player>().speed = 7f;
+            collision.gameObject.GetComponent<CharacterController>().moveSpeed *= 1.5f;
         }
     }
 
@@ -26,17 +26,7 @@ public class DamageRadius : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
 
-            //float hpLos = GetComponentInParent<Ksenich>().damage / player.GetComponent<Player>().hp;
-            //player.GetComponent<Player>().hp -= GetComponentInParent<Ksenich>().damage;
-            //Vector2 currentOffsetMax = player.GetComponent<Player>().healthBar.offsetMax;
-            //Vector2 currentOffsetMin = player.GetComponent<Player>().healthBar.offsetMin;
-
-            //currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
-
-            //player.GetComponent<Player>().healthBar.offsetMax = currentOffsetMax;
-            //player.GetComponent<Player>().healthBar.offsetMin = currentOffsetMin;
-
-            //player.GetComponent<Player>().hp -= 100;
+            player.GetComponent<Player>().HaveDamage(75);
             yield return new WaitForSeconds(delay);
         }
     }

@@ -58,6 +58,15 @@ public class Bogush : MonoBehaviour
     }
     public void HaveDamage(int damage)
     {
+        if (hp<=0)
+        {
+            Destroy(gameObject);
+
+            PlayerPrefs.SetFloat("PlayerPosX", 1f);
+            PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
+            PlayerPrefs.Save();
+            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(2);
+        }
         hp -= damage;
         float hpLos = damage / hp;
         Vector2 currentOffsetMax = healthBar.offsetMax;

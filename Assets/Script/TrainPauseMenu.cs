@@ -9,7 +9,7 @@ public class TrainPauseMenu : MonoBehaviour
     public GameObject pauseGameMenu;
     public GameObject player;
     public GameObject LoadScreen;
-
+    public string[] text;
     public void Continue()
     {
         pauseGameMenu.SetActive(false);

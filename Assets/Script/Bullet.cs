@@ -5,11 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
-    private GameObject player;
-    private void Start()
-    {
-        player = GameObject.Find("Player");
-    }
     private void ClearPointData()
     {
         for (int i = 1; i < 6; i++)
@@ -47,12 +42,7 @@ public class Bullet : MonoBehaviour
                 collision.gameObject.GetComponent<Ksenich>().HaveDamage(25);
                 if (collision.gameObject.GetComponent<Ksenich>().hp <= 0)
                 {
-                    Destroy(collision.gameObject);
-                    PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
-                    PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
-                    PlayerPrefs.Save();
                     ClearPointData();
-                    player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
                 }
                 Destroy(gameObject);
             }
@@ -61,13 +51,7 @@ public class Bullet : MonoBehaviour
                 collision.gameObject.GetComponent<Bogush>().HaveDamage(25);
                 if (collision.gameObject.GetComponent<Bogush>().hp <= 0)
                 {
-                    Destroy(collision.gameObject);
-
-                    PlayerPrefs.SetFloat("PlayerPosX", 1f);
-                    PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
-                    PlayerPrefs.Save();
                     ClearPointData();
-                    player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(2);
                 }
                 Destroy(gameObject);
             }

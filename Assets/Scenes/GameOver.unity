@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 711728199}
         m_TargetAssemblyTypeName: ControlButton, Assembly-CSharp
-        m_MethodName: playAgain
+        m_MethodName: Loos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadScreen: {fileID: 1849313760}
+  play: {fileID: 0}
 --- !u!1 &1243064537
 GameObject:
   m_ObjectHideFlags: 0

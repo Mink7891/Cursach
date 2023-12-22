@@ -18,12 +18,14 @@ public class PlayerTraining : MonoBehaviour
     public GameObject uiMove;
 
     public GameObject[] uiDestoyEnemy;
-    public string[] text;
+    public GameObject canvas;
+    private string[] text;
 
     public static bool shootTemp = false;
 
     private IEnumerator Start()
     {
+        text = canvas.GetComponent<TrainPauseMenu>().text;
         yield return new WaitForSeconds(4f);
         uiMove.SetActive(false);
     }

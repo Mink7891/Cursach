@@ -26,6 +26,15 @@ public class Ksenich : MonoBehaviour
     }
     public void HaveDamage(int damagePlayer)
     {
+        if (hp<=0)
+        {
+            Destroy(gameObject);
+            PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
+            PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
+            PlayerPrefs.Save();
+
+            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
+        }
         hp -= damagePlayer;
         float hpLos = (float)damagePlayer / hp;
         Vector2 currentOffsetMax = healthBar.offsetMax;

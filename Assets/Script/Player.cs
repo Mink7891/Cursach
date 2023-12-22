@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public AudioSource shootSource;
     public AudioSource waterSource;
+    public AudioSource eatSource;
     private void Start()
     {
         if (PlayerPrefs.HasKey("PlayerHP"))
@@ -28,7 +29,7 @@ public class Player : MonoBehaviour
             Vector2 currentOffsetMax = healthBar.offsetMax;
             Vector2 currentOffsetMin = healthBar.offsetMin;
 
-            currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+            currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos + 2;
 
             healthBar.offsetMax = currentOffsetMax;
             healthBar.offsetMin = currentOffsetMin;
@@ -56,6 +57,7 @@ public class Player : MonoBehaviour
         {
             if (hp < 1000f)
             {
+                eatSource.Play();
                 float hpPlus = hp;
                 if (hp + 100 <= 1000)
                 {
@@ -70,7 +72,7 @@ public class Player : MonoBehaviour
                 Vector2 currentOffsetMax = healthBar.offsetMax;
                 Vector2 currentOffsetMin = healthBar.offsetMin;
 
-                currentOffsetMax.y += (long)currentOffsetMax.y * hpLos + 2;
+                currentOffsetMax.y += (long)currentOffsetMax.y * hpLos + 3;
 
                 healthBar.offsetMax = currentOffsetMax;
                 healthBar.offsetMin = currentOffsetMin;
@@ -98,12 +100,6 @@ public class Player : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-    private IEnumerator Boom()
-    {
-        transform.GetChild(0).gameObject.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        transform.GetChild(0).gameObject.SetActive(false);
-    }
     private void HandleShootingInput()
     {
 
@@ -130,7 +126,7 @@ public class Player : MonoBehaviour
         Vector2 currentOffsetMax = healthBar.offsetMax;
         Vector2 currentOffsetMin = healthBar.offsetMin;
 
-        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
+        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos + 2;
 
         healthBar.offsetMax = currentOffsetMax;
         healthBar.offsetMin = currentOffsetMin;

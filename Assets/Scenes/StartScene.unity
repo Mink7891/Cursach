@@ -1623,10 +1623,9 @@ GameObject:
   - component: {fileID: 958660996}
   - component: {fileID: 958660995}
   - component: {fileID: 958660997}
-  - component: {fileID: 958660998}
   m_Layer: 0
   m_Name: Audio Source
-  m_TagString: Untagged
+  m_TagString: BG_MUSIC_CREATED
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1761,19 +1760,6 @@ MonoBehaviour:
   sliderTag: BG_MUSIC_VOLUME_SLIDER
   textVolumeTag: BG_MUSIC_VOLUME_TEXT
   volume: 0.5
---- !u!114 &958660998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958660994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3187514fe2ed5084b96f9eb28b2beab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  createdTag: BG_MUSIC_CREATED
 --- !u!1 &1022555139
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,7 +2847,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0418\u0433\u0440\u0430\u0442\u044C"
+  m_text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
   m_sharedMaterial: {fileID: 19159866401745315, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
