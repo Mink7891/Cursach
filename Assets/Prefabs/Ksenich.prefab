@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6c6b0de064f63954e88ba63f8b253e6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff799af24df0eed449215b048824d1c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -238,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 5340796261765840072, guid: e5ea674707315de448485b8b17dba281, type: 3}
   hp: 150
+  healthBar: {fileID: 0}
   damage: 50
 --- !u!61 &7408895498547732094
 BoxCollider2D:
