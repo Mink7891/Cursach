@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public AudioSource shootSource;
     public AudioSource waterSource;
+    public AudioSource eatSource;
     private void Start()
     {
         if (PlayerPrefs.HasKey("PlayerHP"))
@@ -56,6 +57,7 @@ public class Player : MonoBehaviour
         {
             if (hp < 1000f)
             {
+                eatSource.Play();
                 float hpPlus = hp;
                 if (hp + 100 <= 1000)
                 {
@@ -70,7 +72,7 @@ public class Player : MonoBehaviour
                 Vector2 currentOffsetMax = healthBar.offsetMax;
                 Vector2 currentOffsetMin = healthBar.offsetMin;
 
-                currentOffsetMax.y += (long)currentOffsetMax.y * hpLos + 2;
+                currentOffsetMax.y += (long)currentOffsetMax.y * hpLos + 3;
 
                 healthBar.offsetMax = currentOffsetMax;
                 healthBar.offsetMin = currentOffsetMin;
