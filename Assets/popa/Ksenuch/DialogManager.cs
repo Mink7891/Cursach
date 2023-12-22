@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using UnityEditor.SceneManagement;
 public class DialogManager : MonoBehaviour
 {
     public TMP_Text dialogText;
@@ -11,6 +12,8 @@ public class DialogManager : MonoBehaviour
     public GameObject dialogWindow;
     public Image img;
     private GameObject player;
+    public GameObject fade;
+    public AudioClip drawSound;
 
     private void Start()
     {
@@ -36,6 +39,32 @@ public class DialogManager : MonoBehaviour
         player.GetComponent<Player>().enabled = true;
         player.GetComponent<CharacterController>().enabled = true;
         enemyNav.speed = 3;
+        if (EndBossScript.isload)
+        {
+            PlayerPrefs.SetFloat("PlayerPosX", 1f);
+            PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
+            PlayerPrefs.Save();
+            fade.SetActive(true);
+            enemy.GetComponent<AudioSource>().clip = drawSound;
+            enemy.GetComponent<AudioSource>().enabled = true;
+            enemy.GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(4);
+            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(2);
+        }
+
+        if (EndStageTriggerKsen.isload)
+        {
+           
+            PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
+            PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
+            PlayerPrefs.Save();
+            fade.SetActive(true);
+            enemy.GetComponent<AudioSource>().clip = drawSound;
+            enemy.GetComponent<AudioSource>().enabled = true;
+            enemy.GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(4);
+            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
+        }
     }
 
 

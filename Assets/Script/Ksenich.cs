@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,6 +16,10 @@ public class Ksenich : MonoBehaviour
     public int damage;
     private NavMeshAgent agent;
     public AudioSource walkSource;
+    public Dialog[] dialog;
+    private bool isWalking = false;
+    public bool isScene = true;
+    public EndStageTriggerKsen endSceneTrigger;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -28,12 +33,9 @@ public class Ksenich : MonoBehaviour
     {
         if (hp<=0)
         {
-            Destroy(gameObject);
-            PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
-            PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
-            PlayerPrefs.Save();
-
-            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
+            isWalking = true;
+            endSceneTrigger.isTrigger = true;
+           
         }
         hp -= damagePlayer;
         float hpLos = (float)damagePlayer / hp;
@@ -54,23 +56,38 @@ public class Ksenich : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= 9 && Vector3.Distance(transform.position, player.transform.position) > 5)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 9 && Vector3.Distance(transform.position, player.transform.position) > 5 && !isScene && !isWalking)
         {
             GetComponent<WalkEnemy>().AnimWalk(player.transform, anim);
             Attack();
             agent.SetDestination(player.transform.position);
             walkSource.enabled = true;
         }
+
+
+      
+
+
+
         else
         { 
-            anim.SetTrigger("idle");
-            walkSource.enabled = false;
-            agent.ResetPath();
-            if (Vector3.Distance(transform.position, player.transform.position) <= 5)
+            
+            if (Vector3.Distance(transform.position, player.transform.position) <= 5 && !isScene && !isWalking)
             {
+                anim.SetTrigger("idle");
+                walkSource.enabled = false;
+                agent.ResetPath();
                 Attack();
             }
+
+            else if (isWalking)
+            {
+                agent.SetDestination(new Vector2(-78.49f, 72.05f));
+            }
         }
+
+
+        
     }
 
     private IEnumerator ShootWithDelay(Vector3 targetPosition, float delay)
@@ -98,5 +115,13 @@ public class Ksenich : MonoBehaviour
     {
         transform.GetChild(0).gameObject.SetActive(false);
         countBook = 0;
+    }
+
+
+    public void StartDialog(int index)
+    {
+
+        StartCoroutine(dialog[index].dialog.GetComponent<DialogManager>().StartDialog(dialog[index].namePers, dialog[index].say, dialog[index].clips, dialog[index].audioSource, gameObject, dialog[index].img));
+
     }
 }

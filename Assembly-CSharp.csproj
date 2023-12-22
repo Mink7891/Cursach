@@ -59,6 +59,7 @@
     <Compile Include="Assets\Script\WalkEnemy.cs" />
     <Compile Include="Assets\Script\Bogush.cs" />
     <Compile Include="Assets\Scenes\House\Assets\ZatuhScreen.cs" />
+    <Compile Include="Assets\EndBossScript.cs" />
     <Compile Include="Assets\Script\WalkAnimPervak.cs" />
     <Compile Include="Assets\Script\SpawnRunPervak.cs" />
     <Compile Include="Assets\Script\PervakFloor3.cs" />
@@ -103,6 +104,8 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
+    <Compile Include="Assets\FadeScreen.cs" />
+    <Compile Include="Assets\Script\EndStageTriggerKsen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

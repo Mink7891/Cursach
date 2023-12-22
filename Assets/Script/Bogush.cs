@@ -14,7 +14,9 @@ public class Bogush : MonoBehaviour
     private Animator animator;
     public RectTransform healthBar;
     public AudioSource walkSource;
-    public Dialog dialog;
+    private bool isWalking = false;
+    public Dialog[] dialog;
+    public EndBossScript endSceneTrigger;
     private void Start()
     {
         player = GameObject.Find("Player");
@@ -23,6 +25,17 @@ public class Bogush : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
+
+
+    bool IsWallBetween(Vector3 start, Vector3 end)
+    {
+        int layerMask = ~LayerMask.GetMask("EnemyLayer");
+        RaycastHit2D hit = Physics2D.Raycast(start, (end - start).normalized, Vector2.Distance(start, end), layerMask);
+
+        return hit.collider != null && hit.collider.CompareTag("Decor");
+    }
+
+
     private void Update()
     {
         float horizontal = Mathf.Clamp(agent.velocity.normalized.x, -1f, 1f);
@@ -33,18 +46,19 @@ public class Bogush : MonoBehaviour
         animator.SetFloat("vertical", vertical);
         animator.SetFloat("speed" , speed);
 
-        if (Vector3.Distance(transform.position, player.transform.position) <= 10 && Vector3.Distance(transform.position, player.transform.position) > 5)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 10 && Vector3.Distance(transform.position, player.transform.position) > 5 && !isWalking)
         {
+            
             transform.GetChild(0).gameObject.SetActive(false);
             agent.SetDestination(player.transform.position);
             walkSource.enabled = true;
         }
-        else if (Vector3.Distance(transform.position, player.transform.position) <= 5)
+        else if (Vector3.Distance(transform.position, player.transform.position) <= 5 && !isWalking)
         {
             walkSource.enabled = false;
             GameObject lineObject = transform.GetChild(0).gameObject;
 
-            if (lineObject)
+            if (lineObject && !IsWallBetween(gameObject.transform.position, player.transform.position))
             {
                 lineObject.SetActive(true);
                 lineObject.GetComponent<Line>().AttackLine();
@@ -53,19 +67,33 @@ public class Bogush : MonoBehaviour
                     StartCoroutine(Damage());
                 }
             }
+
+            else
+            {
+                if (IsWallBetween(gameObject.transform.position, player.transform.position))
+                {
+                    transform.GetChild(0).gameObject.SetActive(false);
+                }
+            }
+
+
             agent.ResetPath();
+        }
+
+        else if (isWalking)
+        {
+            agent.SetDestination(new Vector2(-74.176f, 63.565f));
         }
     }
     public void HaveDamage(int damage)
     {
         if (hp<=0)
         {
-            Destroy(gameObject);
-
-            PlayerPrefs.SetFloat("PlayerPosX", 1f);
-            PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
-            PlayerPrefs.Save();
-            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(2);
+            transform.GetChild(0).gameObject.SetActive(false);
+            isWalking = true;
+            endSceneTrigger.isTrigger = true;
+           
+            
         }
         hp -= damage;
         float hpLos = damage / hp;
@@ -91,10 +119,12 @@ public class Bogush : MonoBehaviour
 
 
 
-    public void StartDialog()
+    public void StartDialog(int index)
     {
-        
-        StartCoroutine(dialog.dialog.GetComponent<DialogManager>().StartDialog(dialog.namePers, dialog.say,dialog.clips, dialog.audioSource, gameObject, dialog.img));
+
+        StartCoroutine(dialog[index].dialog.GetComponent<DialogManager>().StartDialog(dialog[index].namePers, dialog[index].say,dialog[index].clips, dialog[index].audioSource, gameObject, dialog[index].img));
         
     }
+
+
 }
