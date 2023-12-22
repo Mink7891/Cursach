@@ -18,6 +18,7 @@ TagManager:
   - pointDoor
   - turniket
   - bullet
+  - shaurma
   layers:
   - Default
   - TransparentFX

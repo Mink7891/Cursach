@@ -51,6 +51,37 @@ public class Player : MonoBehaviour
             waterSource.Play();
             CharacterController.isWater = true;
         }
+
+        if (collision.gameObject.CompareTag("shaurma"))
+        {
+            if (hp < 1000f)
+            {
+                float hpPlus = hp;
+                if (hp + 100 <= 1000)
+                {
+                    hp += 100f;
+                }
+                else
+                {
+                    hp += 1000 - hp;
+                }
+                float hpLos = (hp - hpPlus) / hp;
+
+                Vector2 currentOffsetMax = healthBar.offsetMax;
+                Vector2 currentOffsetMin = healthBar.offsetMin;
+
+                currentOffsetMax.y += (long)currentOffsetMax.y * hpLos + 2;
+
+                healthBar.offsetMax = currentOffsetMax;
+                healthBar.offsetMin = currentOffsetMin;
+
+                PlayerPrefs.SetFloat("PlayerHP", hp);
+                PlayerPrefs.Save();
+
+                Destroy(collision.gameObject);
+            }
+            
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

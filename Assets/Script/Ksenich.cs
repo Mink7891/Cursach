@@ -14,6 +14,7 @@ public class Ksenich : MonoBehaviour
     public RectTransform healthBar;
     public int damage;
     private NavMeshAgent agent;
+    public AudioSource walkSource;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -44,16 +45,17 @@ public class Ksenich : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= 13 && Vector3.Distance(transform.position, player.transform.position) > 5)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 9 && Vector3.Distance(transform.position, player.transform.position) > 5)
         {
             GetComponent<WalkEnemy>().AnimWalk(player.transform, anim);
             Attack();
             agent.SetDestination(player.transform.position);
-            
+            walkSource.enabled = true;
         }
         else
         { 
             anim.SetTrigger("idle");
+            walkSource.enabled = false;
             agent.ResetPath();
             if (Vector3.Distance(transform.position, player.transform.position) <= 5)
             {
@@ -74,7 +76,7 @@ public class Ksenich : MonoBehaviour
     {
         if (canShoot && countBook < 3)
         {
-            StartCoroutine(ShootWithDelay(player.transform.position, 0.5f));
+            StartCoroutine(ShootWithDelay(player.transform.position, 0.7f));
         }
         else if (countBook == 3)
         {

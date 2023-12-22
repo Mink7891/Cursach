@@ -14,6 +14,7 @@ public class Kashkin : MonoBehaviour
     public int damage;
     private NavMeshAgent agent;
     public RectTransform healthBar;
+    public AudioSource walkSource;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -38,7 +39,7 @@ public class Kashkin : MonoBehaviour
     private void Update()
     {
         GetComponent<WalkEnemy>().AnimWalk(player.transform, anim);
-        if (Vector3.Distance(transform.position, player.transform.position) <= 13 && Vector3.Distance(transform.position, player.transform.position) > 5)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 9 && Vector3.Distance(transform.position, player.transform.position) > 5)
         {
             agent.SetDestination(player.transform.position);
             if (canShoot)
@@ -46,11 +47,13 @@ public class Kashkin : MonoBehaviour
                 Attack();
             }
             WalkEnemy.temp = true;
+            walkSource.enabled = true;
         }
         else
         {
             agent.ResetPath();
             anim.SetTrigger("idle");
+            walkSource.enabled = false;
             WalkEnemy.temp = false;
             if (canShoot && Vector3.Distance(transform.position, player.transform.position) <= 5)
             {
