@@ -9,10 +9,12 @@ public class Bogush : MonoBehaviour
     public float hp;
     private bool temp = true;
     public int damage;
+    public int speed = 3;
     private NavMeshAgent agent;
     private Animator animator;
     public RectTransform healthBar;
     public AudioSource walkSource;
+    public Dialog dialog;
     private void Start()
     {
         player = GameObject.Find("Player");
@@ -76,5 +78,14 @@ public class Bogush : MonoBehaviour
         yield return new WaitForSeconds(1f);
         temp = true;
 
+    }
+
+
+
+    public void StartDialog()
+    {
+        
+        StartCoroutine(dialog.dialog.GetComponent<DialogManager>().StartDialog(dialog.namePers, dialog.say,dialog.clips, dialog.audioSource, gameObject, dialog.img));
+        
     }
 }

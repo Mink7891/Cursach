@@ -6,11 +6,13 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Dialog 
 {
-    public string name;
+   
 
-    [TextArea(3,10)]
-    public string[] sentences;
-
-
-
+    public GameObject dialog;
+    public string namePers;
+    [TextArea(3, 10)]
+    public string[] say;
+    public AudioSource audioSource;
+    public AudioClip[] clips;
+    public Sprite img;
 }

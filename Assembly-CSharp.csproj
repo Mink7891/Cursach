@@ -77,6 +77,7 @@
     <Compile Include="Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Script\ControlButton.cs" />
     <Compile Include="Assets\Script\DamageRadius.cs" />
+    <Compile Include="Assets\CutSceneTrigger.cs" />
     <Compile Include="Assets\Script\Line.cs" />
     <Compile Include="Assets\Script\Ksenich.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />

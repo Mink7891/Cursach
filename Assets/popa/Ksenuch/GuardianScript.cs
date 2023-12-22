@@ -7,7 +7,9 @@ public class GuardianScript : MonoBehaviour
     public GameObject dialog;
     public string namePers;
     public string[] say;
-    public AudioSource[] audioSource;
+    public Sprite img;
+    public AudioSource audioSource;
+    public AudioClip[] clips;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,7 +19,7 @@ public class GuardianScript : MonoBehaviour
             collision.gameObject.GetComponent<Player>().enabled = false;
             collision.gameObject.GetComponent<CharacterController>().walkSource.Stop();
             collision.gameObject.GetComponent<CharacterController>().enabled = false;
-            StartCoroutine(dialog.GetComponent<DialogManager>().StartDialog(namePers, say, audioSource));
+            StartCoroutine(dialog.GetComponent<DialogManager>().StartDialogStatic(namePers, say,clips, audioSource,img));
         }
     }
 }
