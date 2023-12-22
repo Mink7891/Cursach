@@ -11,11 +11,12 @@ public class ControlButton : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Scene"))
         {
-            play.SetActive(true);
+            if (play) { play.SetActive(true); }
+            
         }
         else
         {
-            play.SetActive(false);
+            if (play) { play.SetActive(false); }
         }
     }
     public void Play()
@@ -27,6 +28,11 @@ public class ControlButton : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetFloat("BG_MUSIC", GameObject.FindWithTag("BG_MUSIC_CREATED").GetComponent<AudioSource>().volume);
+        LoadScreen.GetComponent<LoadScreen>().Loading(1);
+    }
+    public void Loos()
+    {
+        PlayerPrefs.DeleteAll();
         LoadScreen.GetComponent<LoadScreen>().Loading(1);
     }
 
