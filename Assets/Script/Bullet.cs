@@ -10,7 +10,15 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
-        damage = player.GetComponent<Player>().damage;
+        if (player)
+        {
+            damage = player.GetComponent<Player>().damage;
+        }
+        else
+        {
+            damage = 25;
+        }
+        
     }
     private void ClearPointData()
     {
