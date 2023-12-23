@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0503a0b6216c940bf72b86ad4ecd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
+  damage: 100
   hp: 50
   runSource: {fileID: 4575430355642118347}
   attackSource: {fileID: -941414469197591000}

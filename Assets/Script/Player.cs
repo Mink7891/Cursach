@@ -19,13 +19,9 @@ public class Player : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Baf"))
         {
-            if (PlayerPrefs.GetString("Baf") == "Bear")
+            if (PlayerPrefs.GetString("Baf") == "Energetik")
             {
-                damage *= 2;
-            }
-            else if (PlayerPrefs.GetString("Baf") == "Energetik")
-            {
-                GetComponent<CharacterController>().moveSpeed *= 2;
+                GetComponent<CharacterController>().moveSpeed *= 1.05f;
             }
         }
 
@@ -128,17 +124,15 @@ public class Player : MonoBehaviour
 
     public void HaveDamage(int damage)
     {
-        if (hp <= 0)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
+        float modifiedDamage = PlayerPrefs.GetString("Baf") == "Bear" ? damage * 0.95f : damage;
+        hp -= modifiedDamage;
+        if (hp <= 0) {SceneManager.LoadScene("GameOver");}
+        float hpLos = modifiedDamage / hp;
 
-        hp -= damage;
-        float hpLos = damage / hp;
         Vector2 currentOffsetMax = healthBar.offsetMax;
         Vector2 currentOffsetMin = healthBar.offsetMin;
 
-        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos + 2;
+        currentOffsetMax.y -= (long)currentOffsetMax.y * hpLos;
 
         healthBar.offsetMax = currentOffsetMax;
         healthBar.offsetMin = currentOffsetMin;

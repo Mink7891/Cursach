@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\ControlObjStreet.cs" />
     <Compile Include="Assets\Script\WalkEnemy.cs" />
     <Compile Include="Assets\Script\Bogush.cs" />
     <Compile Include="Assets\Scenes\House\Assets\ZatuhScreen.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Script\WalkAnimPervak.cs" />
     <Compile Include="Assets\Script\SpawnRunPervak.cs" />
     <Compile Include="Assets\Script\PervakFloor3.cs" />
+    <Compile Include="Assets\Script\KBSCRIPT\PlayerKB.cs" />
     <Compile Include="Assets\Script\TrainingCharacterController.cs" />
     <Compile Include="Assets\kbinput.cs" />
     <Compile Include="Assets\Script\Kashkin.cs" />
@@ -84,7 +86,9 @@
     <Compile Include="Assets\Script\Ksenich.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\SwanEnemyTrain.cs" />
+    <Compile Include="Assets\Script\KBSCRIPT\KB.cs" />
     <Compile Include="Assets\popa\Ksenuch\GuardianScript.cs" />
+    <Compile Include="Assets\Script\KBSCRIPT\DialogManagerKB.cs" />
     <Compile Include="Assets\Script\SoundVolumControllerComponent.cs" />
     <Compile Include="Assets\popa\Ksenuch\Task.cs" />
     <Compile Include="Assets\Script\TrainPauseMenu.cs" />
@@ -92,8 +96,10 @@
     <Compile Include="Assets\Script\DeleteBoom.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
     <Compile Include="Assets\Script\Turniket.cs" />
+    <Compile Include="Assets\Script\KBSCRIPT\Prodavets.cs" />
     <Compile Include="Assets\Script\SaveManager.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventTrigger.cs" />
+    <Compile Include="Assets\Script\vuzinput.cs" />
     <Compile Include="Assets\Script\Options.cs" />
     <Compile Include="Assets\Script\Ladder.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogTrigger.cs" />
@@ -106,12 +112,6 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\Script\KBSCRIPT\PlayerKB.cs" />
-    <Compile Include="Assets\Script\ControlObjStreet.cs" />
-    <Compile Include="Assets\Script\KBSCRIPT\KB.cs" />
-    <Compile Include="Assets\Script\KBSCRIPT\DialogManagerKB.cs" />
-    <Compile Include="Assets\Script\KBSCRIPT\Prodavets.cs" />
-    <Compile Include="Assets\Script\vuzinput.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
