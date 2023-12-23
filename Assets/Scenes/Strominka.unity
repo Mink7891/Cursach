@@ -47471,6 +47471,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7707133559385606789, guid: 8def21476952f944084952621ad4672a, type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707133559385606789, guid: 8def21476952f944084952621ad4672a, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 79970932}
@@ -47484,11 +47488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7707133559385606790, guid: 8def21476952f944084952621ad4672a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.03
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 7707133559385606790, guid: 8def21476952f944084952621ad4672a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.35
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 7707133559385606790, guid: 8def21476952f944084952621ad4672a, type: 3}
       propertyPath: m_LocalPosition.z

@@ -28,11 +28,15 @@ public class ControlButton : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetFloat("BG_MUSIC", GameObject.FindWithTag("BG_MUSIC_CREATED").GetComponent<AudioSource>().volume);
-        LoadScreen.GetComponent<LoadScreen>().Loading(1);
+        PlayerPrefs.SetInt("Scene", 0);
+        PlayerPrefs.Save();
+        LoadScreen.GetComponent<LoadScreen>().Loading(8);
     }
     public void Loos()
     {
+        float value = PlayerPrefs.GetFloat("BG_MUSIC");
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetFloat("BG_MUSIC", value);
         LoadScreen.GetComponent<LoadScreen>().Loading(1);
     }
 

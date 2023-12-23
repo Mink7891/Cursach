@@ -9,24 +9,4 @@ public class DialogTrigger : MonoBehaviour
     public Dialog dialog;
     public Image img;
     public TMPro.TextMeshPro textMeshPro;
-
-    void Start()
-    {
-    }
-
-
-    //public void TriggerDialog()
-    //{
-    //    FindObjectOfType<DialogManager>().StartDialog(dialog);
-       
-    //}
-
-
-
-
-    
-
-
-
-
 }

@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public GameObject bullet;
     public RectTransform healthBar;
     public float hp;
-
+    public int damage;
     public GameObject LoadScreen;
 
     public AudioSource shootSource;
@@ -17,6 +17,18 @@ public class Player : MonoBehaviour
     public AudioSource eatSource;
     private void Start()
     {
+        if (PlayerPrefs.HasKey("Baf"))
+        {
+            if (PlayerPrefs.GetString("Baf") == "Bear")
+            {
+                damage *= 2;
+            }
+            else if (PlayerPrefs.GetString("Baf") == "Energetik")
+            {
+                GetComponent<CharacterController>().moveSpeed *= 2;
+            }
+        }
+
         if (PlayerPrefs.HasKey("PlayerHP"))
         {
             hp = PlayerPrefs.GetFloat("PlayerHP");

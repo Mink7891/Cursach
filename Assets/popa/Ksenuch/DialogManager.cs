@@ -43,6 +43,7 @@ public class DialogManager : MonoBehaviour
         {
             PlayerPrefs.SetFloat("PlayerPosX", 1f);
             PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
+            PlayerPrefs.DeleteKey("PlayerHP");
             PlayerPrefs.Save();
             fade.SetActive(true);
             enemy.GetComponent<AudioSource>().clip = drawSound;
@@ -57,6 +58,7 @@ public class DialogManager : MonoBehaviour
            
             PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
             PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
+            PlayerPrefs.DeleteKey("PlayerHP");
             PlayerPrefs.Save();
             fade.SetActive(true);
             enemy.GetComponent<AudioSource>().clip = drawSound;
