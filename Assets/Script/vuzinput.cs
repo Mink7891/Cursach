@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class kbinput : MonoBehaviour
-{
 
+public class vuzinput : MonoBehaviour
+{
     void OnTriggerStay2D(Collider2D other)
     {
-      
-         if (other.CompareTag("Player"))
+
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("KB");
+            SceneManager.LoadScene(1);
         }
     }
 }

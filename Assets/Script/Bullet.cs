@@ -5,6 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
+    private GameObject player;
+    private int damage;
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        if (player)
+        {
+            damage = player.GetComponent<Player>().damage;
+        }
+        else
+        {
+            damage = 25;
+        }
+        
+    }
     private void ClearPointData()
     {
         for (int i = 1; i < 6; i++)
@@ -39,7 +54,7 @@ public class Bullet : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Ksenich"))
             {
-                collision.gameObject.GetComponent<Ksenich>().HaveDamage(25);
+                collision.gameObject.GetComponent<Ksenich>().HaveDamage(damage);
                 if (collision.gameObject.GetComponent<Ksenich>().hp <= 0)
                 {
                     ClearPointData();
@@ -48,7 +63,7 @@ public class Bullet : MonoBehaviour
             }
             else if (collision.gameObject.CompareTag("Bogush"))
             {
-                collision.gameObject.GetComponent<Bogush>().HaveDamage(25);
+                collision.gameObject.GetComponent<Bogush>().HaveDamage(damage);
                 if (collision.gameObject.GetComponent<Bogush>().hp <= 0)
                 {
                     ClearPointData();
@@ -57,7 +72,7 @@ public class Bullet : MonoBehaviour
             }
             else if (collision.gameObject.CompareTag("Kashkin"))
             {
-                collision.gameObject.GetComponent<Kashkin>().HaveDamage(20);
+                collision.gameObject.GetComponent<Kashkin>().HaveDamage(damage);
                 if (collision.gameObject.GetComponent<Kashkin>().hp <= 0)
                 {
                     Destroy(collision.gameObject);
@@ -66,7 +81,7 @@ public class Bullet : MonoBehaviour
             }
             else if (collision.gameObject.CompareTag("Pervak"))
             {
-                collision.gameObject.GetComponent<Pervak>().hp -= 25;
+                collision.gameObject.GetComponent<Pervak>().hp -= damage;
                 if (collision.gameObject.GetComponent<Pervak>().hp <= 0)
                 {
                     Destroy(collision.gameObject);
