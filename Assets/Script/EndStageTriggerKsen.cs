@@ -16,7 +16,9 @@ public class EndStageTriggerKsen : MonoBehaviour
 
     public void Start()
     {
+    
         player = GameObject.Find("Player");
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

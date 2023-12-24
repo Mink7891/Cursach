@@ -78,6 +78,7 @@
     <Compile Include="Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Script\ControlButton.cs" />
     <Compile Include="Assets\Script\DamageRadius.cs" />
+    <Compile Include="Assets\Script\EndStageTriggerKsen.cs" />
     <Compile Include="Assets\CutSceneTrigger.cs" />
     <Compile Include="Assets\Script\Line.cs" />
     <Compile Include="Assets\Script\Ksenich.cs" />
@@ -101,11 +102,10 @@
     <Compile Include="Assets\Script\SceneChanger.cs" />
     <Compile Include="Assets\Script\ControlDoor.cs" />
     <Compile Include="Assets\Script\TrainPervak.cs" />
+    <Compile Include="Assets\FadeScreen.cs" />
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\FadeScreen.cs" />
-    <Compile Include="Assets\Script\EndStageTriggerKsen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

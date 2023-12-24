@@ -41,6 +41,7 @@ public class DialogManager : MonoBehaviour
         enemyNav.speed = 3;
         if (EndBossScript.isload)
         {
+            EndBossScript.isload = false;
             PlayerPrefs.SetFloat("PlayerPosX", 1f);
             PlayerPrefs.SetFloat("PlayerPosY", -5.09f);
             PlayerPrefs.Save();
@@ -54,7 +55,8 @@ public class DialogManager : MonoBehaviour
 
         if (EndStageTriggerKsen.isload)
         {
-           
+
+            EndStageTriggerKsen.isload = false;
             PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
             PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
             PlayerPrefs.Save();
