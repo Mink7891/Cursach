@@ -15,6 +15,10 @@ public class Kashkin : MonoBehaviour
     private NavMeshAgent agent;
     public RectTransform healthBar;
     public AudioSource walkSource;
+    public bool isScene = true;
+    public Dialog[] dialog;
+    private bool isWalking = false;
+    public EndStageKashkin endSceneTrigger;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -26,6 +30,13 @@ public class Kashkin : MonoBehaviour
 
     public void HaveDamage(int damagePlayer)
     {
+        if (hp <= 0)
+        {
+            isWalking = true;
+            endSceneTrigger.isTrigger = true;
+
+        }
+
         hp -= damagePlayer;
         float hpLos = (float)damagePlayer / hp;
         Vector2 currentOffsetMax = healthBar.offsetMax;
@@ -39,7 +50,7 @@ public class Kashkin : MonoBehaviour
     private void Update()
     {
         GetComponent<WalkEnemy>().AnimWalk(player.transform, anim);
-        if (Vector3.Distance(transform.position, player.transform.position) <= 9 && Vector3.Distance(transform.position, player.transform.position) > 5)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 9 && Vector3.Distance(transform.position, player.transform.position) > 5 && !isScene && !isWalking)
         {
             agent.SetDestination(player.transform.position);
             if (canShoot)
@@ -49,7 +60,7 @@ public class Kashkin : MonoBehaviour
             WalkEnemy.temp = true;
             walkSource.enabled = true;
         }
-        else
+        else if (!isWalking)
         {
             agent.ResetPath();
             anim.SetTrigger("idle");
@@ -59,6 +70,11 @@ public class Kashkin : MonoBehaviour
             {
                 Attack();
             }
+        }
+
+        else if (isWalking)
+        {
+            agent.SetDestination(new Vector2(-10.79f, 114.93f));
         }
         
     }
@@ -90,5 +106,12 @@ public class Kashkin : MonoBehaviour
             StartCoroutine(ShootWithDelay(player.transform.position, 0.5f));
             countBook = 0;
         }
+    }
+
+    public void StartDialog(int index)
+    {
+
+        StartCoroutine(dialog[index].dialog.GetComponent<DialogManager>().StartDialog(dialog[index].namePers, dialog[index].say, dialog[index].clips, dialog[index].audioSource, gameObject, dialog[index].img));
+
     }
 }

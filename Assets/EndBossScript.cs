@@ -33,6 +33,8 @@ public class EndBossScript : MonoBehaviour
             {
 
                 StartDialog(1);
+                PlayerPrefs.SetInt("mark1", 5);
+
             }
 
 
@@ -40,6 +42,7 @@ public class EndBossScript : MonoBehaviour
             {
 
                 StartDialog(2);
+                PlayerPrefs.SetInt("mark1", 4);
             }
 
             
@@ -48,9 +51,10 @@ public class EndBossScript : MonoBehaviour
             {
 
                 StartDialog(3);
+                PlayerPrefs.SetInt("mark1", 3);
             }
 
-
+            PlayerPrefs.Save();
 
         
         }

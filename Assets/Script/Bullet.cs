@@ -75,7 +75,7 @@ public class Bullet : MonoBehaviour
                 collision.gameObject.GetComponent<Kashkin>().HaveDamage(damage);
                 if (collision.gameObject.GetComponent<Kashkin>().hp <= 0)
                 {
-                    Destroy(collision.gameObject);
+                    ClearPointData();
                 }
                 Destroy(gameObject);
             }

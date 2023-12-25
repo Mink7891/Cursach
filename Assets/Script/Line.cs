@@ -26,14 +26,14 @@ public class Line : MonoBehaviour
     }
     public void AttackLine()
     {
-        // Создаем луч от объекта к игроку
+     
         Vector3 start = transform.position;
         Vector3 end = player.transform.position;
         Vector3 directionToPlayer = (end - start).normalized;
 
-        // Отобразить луч в сцене
+      
         int layerMask = ~LayerMask.GetMask("EnemyLayer");
-        // Проверяем столкновение луча с объектами
+       
         RaycastHit2D hit = Physics2D.Raycast(start, directionToPlayer, Vector2.Distance(start, end), layerMask);
         if (hit.collider!= null && hit.collider.CompareTag("Player"))
         {

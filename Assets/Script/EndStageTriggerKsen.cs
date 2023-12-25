@@ -6,8 +6,6 @@ using UnityEngine.Playables;
 public class EndStageTriggerKsen : MonoBehaviour
 {
     public bool isTrigger = false;
-    public PlayableDirector timeline;
-    public PlayableAsset afteTimeLine;
     private bool animationPlayed = false;
     private GameObject player;
     public static bool isload = false;
@@ -34,6 +32,7 @@ public class EndStageTriggerKsen : MonoBehaviour
             {
 
                 StartDialog(1);
+                PlayerPrefs.SetInt("mark2", 5);
             }
 
 
@@ -41,6 +40,7 @@ public class EndStageTriggerKsen : MonoBehaviour
             {
 
                 StartDialog(2);
+                PlayerPrefs.SetInt("mark2", 4);
             }
 
 
@@ -49,9 +49,10 @@ public class EndStageTriggerKsen : MonoBehaviour
             {
 
                 StartDialog(3);
+                PlayerPrefs.SetInt("mark2", 3);
             }
 
-
+            PlayerPrefs.Save();
 
 
         }

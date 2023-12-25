@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House/House.unity
     guid: 5d4c413ecf115d2479ef8e631cf8f956
+  - enabled: 1
+    path: Assets/Scenes/TheBestEnding.unity
+    guid: e78e4c6672834db4a819dc8ace869b06
   m_configObjects: {}

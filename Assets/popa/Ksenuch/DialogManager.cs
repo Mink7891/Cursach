@@ -57,7 +57,7 @@ public class DialogManager : MonoBehaviour
         if (EndStageTriggerKsen.isload)
         {
 
-            EndStageTriggerKsen.isload = false;
+            EndStageTriggerKsen.isload = false; 
             PlayerPrefs.SetFloat("PlayerPosX", -0.94f);
             PlayerPrefs.SetFloat("PlayerPosY", -3.99f);
             PlayerPrefs.DeleteKey("PlayerHP");
@@ -67,14 +67,32 @@ public class DialogManager : MonoBehaviour
             enemy.GetComponent<AudioSource>().enabled = true;
             enemy.GetComponent<AudioSource>().Play();
             yield return new WaitForSeconds(4);
+            fade.SetActive(false);
             player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
         }
+
+        if (EndStageKashkin.isload)
+        {
+            EndStageKashkin.isload = false;
+            PlayerPrefs.Save();
+            fade.SetActive(true);
+            enemy.GetComponent<AudioSource>().clip = drawSound;
+            enemy.GetComponent<AudioSource>().enabled = true;
+            enemy.GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(4);
+            fade.SetActive(false);
+            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(9);
+        }
+            
+
+        
     }
 
 
     public IEnumerator StartDialogStatic(string namePerson, string[] say, AudioClip[] clips, AudioSource audioSource, Sprite image)
     {
       
+        
         dialogWindow.SetActive(true);
         nameText.text = namePerson;
         img.sprite = image;
@@ -91,7 +109,41 @@ public class DialogManager : MonoBehaviour
         player.GetComponent<Player>().enabled = true;
         player.GetComponent<CharacterController>().enabled = true;
        
+      
+      
+       
     }
+
+
+
+    public IEnumerator StartDialogEnding(string namePerson, string[] say, AudioClip[] clips, AudioSource audioSource, Sprite image)
+    {
+
+
+        dialogWindow.SetActive(true);
+        nameText.text = namePerson;
+        img.sprite = image;
+        int i = 0;
+        while (i != say.Length)
+        {
+            dialogText.text = say[i];
+            audioSource.clip = clips[i];
+            audioSource.Play();
+            yield return new WaitForSeconds(audioSource.clip.length);
+            i++;
+        }
+        dialogWindow.SetActive(false);
+      
+
+
+
+
+    }
+
+
+
+
+
 
 
 
