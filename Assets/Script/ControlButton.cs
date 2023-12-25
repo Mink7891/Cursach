@@ -37,7 +37,7 @@ public class ControlButton : MonoBehaviour
         float value = PlayerPrefs.GetFloat("BG_MUSIC");
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetFloat("BG_MUSIC", value);
-        LoadScreen.GetComponent<LoadScreen>().Loading(1);
+        LoadScreen.GetComponent<LoadScreen>().Loading(7);
     }
 
     public void Training()

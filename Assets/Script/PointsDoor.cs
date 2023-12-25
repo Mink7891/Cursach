@@ -80,6 +80,7 @@ public class PointsDoor : MonoBehaviour
                     {
                         doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
                         boss.SetActive(true);
+                        collision.gameObject.GetComponent<Player>().enabled = false;
                         Destroy(gameObject);
                     }
                 }
@@ -129,6 +130,7 @@ public class PointsDoor : MonoBehaviour
                             GameObject.Find("Player").GetComponent<Player>().enabled = true;
                             destr = true;                            
                             boss.SetActive(true);
+                            collision.gameObject.GetComponent<Player>().enabled = false;
                             Destroy(gameObject);
                             break;
                     }

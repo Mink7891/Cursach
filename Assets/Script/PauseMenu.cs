@@ -49,7 +49,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !HasObjectWithSubstring("Door"))
+        if (Input.GetKeyDown(KeyCode.Escape) && !HasObjectWithSubstring("Door") && SceneManager.GetActiveScene().buildIndex != 9)
         {
             player.GetComponent<Player>().enabled = false;
             if (PauseGame)

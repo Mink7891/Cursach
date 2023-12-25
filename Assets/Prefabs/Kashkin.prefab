@@ -122,9 +122,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   book: {fileID: 2589971546304475389, guid: 048270734c5621042b570c951f4e90b8, type: 3}
-  hp: 200
+  hp: 500
   damage: 50
   healthBar: {fileID: 0}
+  walkSource: {fileID: 0}
+  isScene: 1
+  dialog: []
+  endSceneTrigger: {fileID: 0}
 --- !u!114 &4817303972237131416
 MonoBehaviour:
   m_ObjectHideFlags: 0
