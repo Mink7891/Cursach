@@ -88,6 +88,7 @@
     <Compile Include="Assets\Script\Ksenich.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\EndStageKashkin.cs" />
+    <Compile Include="Assets\Script\Bosses.cs" />
     <Compile Include="Assets\Script\SwanEnemyTrain.cs" />
     <Compile Include="Assets\Script\KBSCRIPT\KB.cs" />
     <Compile Include="Assets\popa\Ksenuch\GuardianScript.cs" />
@@ -117,7 +118,6 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\Script\Bosses.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
