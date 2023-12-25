@@ -33,6 +33,9 @@ public class EndCharacter : MonoBehaviour
         yield return StartCoroutine(dialog[index].dialog.GetComponent<DialogManager>().StartDialogEnding(dialog[index].namePers, dialog[index].say, dialog[index].clips, dialog[index].audioSource, dialog[index].img));
         InitUI(index);
         yield return new WaitForSeconds(5);
+        float value = PlayerPrefs.GetFloat("BG_MUSIC");
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetFloat("BG_MUSIC", value);
         SceneManager.LoadScene(0);
 
 

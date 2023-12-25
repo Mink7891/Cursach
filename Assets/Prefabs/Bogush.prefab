@@ -149,9 +149,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60851e873178a545b0ded3c5c1fbcec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 400
   damage: 50
+  speed: 3
   healthBar: {fileID: 0}
+  walkSource: {fileID: 0}
+  dialog: []
+  endSceneTrigger: {fileID: 0}
 --- !u!114 &1486003858006466542
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+
 public class DialogManager : MonoBehaviour
 {
     public TMP_Text dialogText;
@@ -51,7 +52,8 @@ public class DialogManager : MonoBehaviour
             enemy.GetComponent<AudioSource>().enabled = true;
             enemy.GetComponent<AudioSource>().Play();
             yield return new WaitForSeconds(4);
-            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(2);
+            SceneManager.LoadScene(2);
+            //player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(2);
         }
 
         if (EndStageTriggerKsen.isload)
@@ -68,7 +70,8 @@ public class DialogManager : MonoBehaviour
             enemy.GetComponent<AudioSource>().Play();
             yield return new WaitForSeconds(4);
             fade.SetActive(false);
-            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
+            SceneManager.LoadScene(3);
+            //player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(3);
         }
 
         if (EndStageKashkin.isload)
@@ -81,7 +84,8 @@ public class DialogManager : MonoBehaviour
             enemy.GetComponent<AudioSource>().Play();
             yield return new WaitForSeconds(4);
             fade.SetActive(false);
-            player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(9);
+            SceneManager.LoadScene(9);
+            //player.GetComponent<Player>().LoadScreen.GetComponent<LoadScreen>().Loading(9);
         }
             
 

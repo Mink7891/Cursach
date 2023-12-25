@@ -237,9 +237,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   book: {fileID: 5340796261765840072, guid: e5ea674707315de448485b8b17dba281, type: 3}
-  hp: 150
+  hp: 450
   healthBar: {fileID: 0}
   damage: 50
+  walkSource: {fileID: 0}
+  dialog: []
+  isScene: 1
+  endSceneTrigger: {fileID: 0}
 --- !u!61 &7408895498547732094
 BoxCollider2D:
   m_ObjectHideFlags: 0

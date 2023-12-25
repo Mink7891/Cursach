@@ -60,6 +60,7 @@
     <Compile Include="Assets\Script\WalkEnemy.cs" />
     <Compile Include="Assets\Script\Bogush.cs" />
     <Compile Include="Assets\Scenes\House\Assets\ZatuhScreen.cs" />
+    <Compile Include="Assets\popa\Ksenuch\EndCharacter.cs" />
     <Compile Include="Assets\EndBossScript.cs" />
     <Compile Include="Assets\Script\WalkAnimPervak.cs" />
     <Compile Include="Assets\Script\SpawnRunPervak.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Assets\Script\EndStageTriggerKsen.cs" />
     <Compile Include="Assets\CutSceneTrigger.cs" />
     <Compile Include="Assets\Script\Line.cs" />
+    <Compile Include="Assets\Script\Ending.cs" />
     <Compile Include="Assets\Script\Ksenich.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\EndStageKashkin.cs" />
@@ -94,7 +96,9 @@
     <Compile Include="Assets\popa\Ksenuch\Task.cs" />
     <Compile Include="Assets\Script\TrainPauseMenu.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\zachetka.cs" />
     <Compile Include="Assets\Script\DeleteBoom.cs" />
+    <Compile Include="Assets\EndingScript.cs" />
     <Compile Include="Assets\popa\Ksenuch\EventManager.cs" />
     <Compile Include="Assets\Script\Turniket.cs" />
     <Compile Include="Assets\Script\KBSCRIPT\Prodavets.cs" />
@@ -113,10 +117,7 @@
     <Compile Include="Assets\popa\Ksenuch\CharacterController.cs" />
     <Compile Include="Assets\Script\Bite.cs" />
     <Compile Include="Assets\popa\Ksenuch\DialogManager.cs" />
-    <Compile Include="Assets\zachetka.cs" />
-    <Compile Include="Assets\EndingScript.cs" />
-    <Compile Include="Assets\popa\Ksenuch\EndCharacter.cs" />
-    <Compile Include="Assets\Script\Ending.cs" />
+    <Compile Include="Assets\Script\Bosses.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

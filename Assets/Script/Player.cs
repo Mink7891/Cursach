@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         {
             if (PlayerPrefs.GetString("Baf") == "Energetik")
             {
-                GetComponent<CharacterController>().moveSpeed *= 1.05f;
+                GetComponent<CharacterController>().moveSpeed *= 1.25f;
             }
         }
 
@@ -124,7 +124,7 @@ public class Player : MonoBehaviour
 
     public void HaveDamage(int damage)
     {
-        float modifiedDamage = PlayerPrefs.GetString("Baf") == "Bear" ? damage * 0.95f : damage;
+        float modifiedDamage = PlayerPrefs.GetString("Baf") == "Bear" ? damage * 0.75f : damage;
         hp -= modifiedDamage;
         if (hp <= 0) {SceneManager.LoadScene("GameOver");}
         float hpLos = modifiedDamage / hp;

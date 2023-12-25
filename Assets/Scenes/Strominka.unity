@@ -14087,19 +14087,19 @@ PrefabInstance:
       objectReference: {fileID: 1313831947}
     - target: {fileID: 1486003858006466543, guid: 8030c343bc67fa5498c19743c4362d1d, type: 3}
       propertyPath: dialog.Array.data[0].namePers
-      value: "\u0422\u0438\u0447\u0435\u0440"
+      value: "\u0421\u0442\u0440\u043E\u0433\u0443\u0448"
       objectReference: {fileID: 0}
     - target: {fileID: 1486003858006466543, guid: 8030c343bc67fa5498c19743c4362d1d, type: 3}
       propertyPath: dialog.Array.data[1].namePers
-      value: "\u0422\u0438\u0447\u0435\u0440"
+      value: "\u0421\u0442\u0440\u043E\u0433\u0443\u0448"
       objectReference: {fileID: 0}
     - target: {fileID: 1486003858006466543, guid: 8030c343bc67fa5498c19743c4362d1d, type: 3}
       propertyPath: dialog.Array.data[2].namePers
-      value: "\u0422\u0438\u0447\u0435\u0440"
+      value: "\u0421\u0442\u0440\u043E\u0433\u0443\u0448"
       objectReference: {fileID: 0}
     - target: {fileID: 1486003858006466543, guid: 8030c343bc67fa5498c19743c4362d1d, type: 3}
       propertyPath: dialog.Array.data[3].namePers
-      value: "\u0422\u0438\u0447\u0435\u0440"
+      value: "\u0421\u0442\u0440\u043E\u0433\u0443\u0448"
       objectReference: {fileID: 0}
     - target: {fileID: 1486003858006466543, guid: 8030c343bc67fa5498c19743c4362d1d, type: 3}
       propertyPath: dialog.audioSource.Array.size
@@ -14339,7 +14339,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 296.6087, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572526609
 MonoBehaviour:
@@ -14361,7 +14361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0411\u043E\u0433\u0443\u0448"
+  m_text: "\u0421\u0442\u0440\u043E\u0433\u0443\u0448"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
   m_sharedMaterial: {fileID: 19159866401745315, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
@@ -17162,7 +17162,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0422\u0438\u0447\u0435\u0440"
+  m_text: "\u0421\u0442\u0440\u043E\u0433\u0443\u0448"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
   m_sharedMaterial: {fileID: 19159866401745315, guid: 253fb4ad32262df4b852252fba61a818, type: 2}
@@ -18032,6 +18032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 831699252}
+  - component: {fileID: 831699253}
   m_Layer: 5
   m_Name: Bosses
   m_TagString: Untagged
@@ -18061,6 +18062,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &831699253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831699251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33eb37b212c3a314587cfa6cee560a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 878009622}
 --- !u!1 &831791744
 GameObject:
   m_ObjectHideFlags: 0
@@ -47488,11 +47502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7707133559385606790, guid: 8def21476952f944084952621ad4672a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.1
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 7707133559385606790, guid: 8def21476952f944084952621ad4672a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.5
+      value: -3.94
       objectReference: {fileID: 0}
     - target: {fileID: 7707133559385606790, guid: 8def21476952f944084952621ad4672a, type: 3}
       propertyPath: m_LocalPosition.z
