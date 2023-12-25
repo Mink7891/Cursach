@@ -82,7 +82,7 @@ public class Bogush : MonoBehaviour
 
         else if (isWalking)
         {
-            agent.SetDestination(new Vector2(-74.176f, 63.565f));
+            agent.SetDestination(new Vector2(-74.176f, 64.31f));
         }
     }
     public void HaveDamage(int damage)
