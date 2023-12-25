@@ -49,18 +49,21 @@ public class PointsDoor : MonoBehaviour
                             doors.GetComponent<ControlDoor>().doors[0].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[1].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
 
                         case 2:
                             doors.GetComponent<ControlDoor>().doors[2].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[3].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
 
                         case 4:
                             doors.GetComponent<ControlDoor>().doors[6].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[7].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
                     }
                 }
@@ -71,11 +74,13 @@ public class PointsDoor : MonoBehaviour
                         doors.GetComponent<ControlDoor>().doors[4].SetActive(true);
                         doors.GetComponent<ControlDoor>().doors[5].SetActive(true);
                         spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                        Destroy(gameObject);
                     }
                     if (index == 5 && doors.GetComponent<ControlDoor>().points[index - 1].position.y < collision.gameObject.transform.position.y)
                     {
                         doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
                         boss.SetActive(true);
+                        Destroy(gameObject);
                     }
                 }
             }
@@ -89,12 +94,14 @@ public class PointsDoor : MonoBehaviour
                             doors.GetComponent<ControlDoor>().doors[0].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[1].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
 
                         case 2:
                             doors.GetComponent<ControlDoor>().doors[2].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[3].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
                     }
                 }
@@ -106,6 +113,7 @@ public class PointsDoor : MonoBehaviour
                             doors.GetComponent<ControlDoor>().doors[4].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[5].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
 
                         case 6:
@@ -113,6 +121,7 @@ public class PointsDoor : MonoBehaviour
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
                             GameObject.Find("Player").GetComponent<Player>().enabled = false;
                             createTemp = true;
+                            Destroy(gameObject);
                             break;
 
                         case 7:
@@ -120,6 +129,7 @@ public class PointsDoor : MonoBehaviour
                             GameObject.Find("Player").GetComponent<Player>().enabled = true;
                             destr = true;                            
                             boss.SetActive(true);
+                            Destroy(gameObject);
                             break;
                     }
                 }
@@ -131,19 +141,20 @@ public class PointsDoor : MonoBehaviour
                             doors.GetComponent<ControlDoor>().doors[6].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[7].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
 
                         case 5:
                             doors.GetComponent<ControlDoor>().doors[8].SetActive(true);
                             doors.GetComponent<ControlDoor>().doors[9].SetActive(true);
                             spawnEnemy.GetComponent<SpawnEnemy>().Spawn(index);
+                            Destroy(gameObject);
                             break;
                     }
                 }
             }
             PlayerPrefs.SetInt("Point" + index, 0);
             PlayerPrefs.Save();
-            Destroy(gameObject);
         }
     }
 }
